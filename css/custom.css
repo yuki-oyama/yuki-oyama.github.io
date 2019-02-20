@@ -1,0 +1,185 @@
+/* Your custom css code goes here */
+a.award {
+  color: #E9967A;
+}
+
+.probootstrap-logo > span {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.probootstrap-section {
+  background: #ffffff;
+  font-size: 18px;
+  font-family: "Abel", 'Noto Sans JP', sans-serif;
+  line-height: 1.5;
+  font-weight: 300;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  color: #b2b8c2;
+}
+
+h2.name {
+  letter-spacing: 1.5px;
+}
+
+h2.name > .jp_kanji {
+  font-weight: 300;
+  font-size: 0.640em;
+}
+
+h2.name > .jp_kana {
+  font-weight: 300;
+  font-size: 0.600em;
+}
+
+ul.profile {
+  color: #343a40;
+}
+
+.probootstrap-section p, ul.top-news, ol.awards li.jp, .en {
+  background: #ffffff;
+  font-size: 15px;
+  font-family: "Roboto", 'Noto Sans JP', sans-serif;
+  line-height: 1.5;
+  font-weight: 300;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  color: #383838;
+}
+
+.thesis p {
+  background: #ffffff;
+  font-size: 15px;
+  font-family: "Roboto", 'Noto Sans JP', sans-serif;
+  line-height: 1.5;
+  font-weight: 300;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  color: #383838;
+}
+
+span.thesis-title {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/*
+.probootstrap-section ol.awards li.en {
+  background: #ffffff;
+  font-size: 17px;
+  font-family: "Abel", sans-serif;
+  line-height: 1.5;
+  font-weight: 300;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  color: #000000;
+}
+*/
+
+span.note {
+  background: #ffffff;
+  font-size: 14px;
+  font-family: "Roboto", 'Noto Sans JP', sans-serif;
+  line-height: 1.5;
+  font-weight: 300;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  color: #b2b8c2;
+}
+
+/* -- for Abel
+p.jp {
+  font-size: 15px;
+}
+
+p.jp > span {
+  font-size: 18px;
+}
+-- */
+
+p.probootstrap-copyright {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+p.probootstrap-copyright span{
+  font-size: 14px;
+}
+
+p.update {
+  background: #ffffff;
+  font-size: 14px;
+  font-family: "Roboto", 'Noto Sans JP', sans-serif;
+  line-height: 1.5;
+  font-weight: 300;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  color: #A9A9A9;
+}
+
+p.introduction {
+  color: #A9A9A9;
+}
+
+p.right {
+  text-align: right;
+}
+
+span.date, .tag {
+  background: #ffffff;
+  font-size: 16px;
+  font-family: "Abel", 'Noto Sans JP', sans-serif;
+  line-height: 1.8;
+  font-weight: 300;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  color: #b2b8c2;
+}
+
+span.journal {
+  font-style: italic;
+}
+
+span.jp {
+  font-size: 15px;
+}
+
+span.award-name {
+  color: #000000;
+}
+
+span.acceptance-rate {
+  color: #E9967A;
+}
+
+span.underline {
+  text-decoration: underline;
+}
+
+/* -- ol -- */
+ol {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    counter-reset: number;
+}
+
+ol li:before {
+    counter-increment: number;
+    content: counter(number) ". ";
+    display: inline-block;
+    font-variant: normal;
+    text-rendering: auto;
+    text-align: right;
+    position: absolute;
+    left: 0em;
+    width: 2em;
+}
+
+ol li {
+    position: relative;
+    padding: 0.5em 0;
+    padding-left: 3.5em;
+    padding-right: 1.5em;
+}

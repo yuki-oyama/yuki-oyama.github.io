@@ -37,7 +37,7 @@ ul.profile {
   color: #343a40;
 }
 
-.probootstrap-section p, ul.top-news, ol.awards li.jp, .en {
+.probootstrap-section p, ul.black, ol.awards li.jp, .en {
   background: #ffffff;
   font-size: 15px;
   font-family: "Roboto", 'Noto Sans JP', sans-serif;
@@ -182,4 +182,11 @@ ol li {
     padding: 0.5em 0;
     padding-left: 3.5em;
     padding-right: 1.5em;
+}
+
+ul.about li {
+    position: relative;
+    padding: 0.5em 0;
+    padding-left: 0.5em;
+    /*padding-right: 1.5em;*/
 }

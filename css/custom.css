@@ -126,7 +126,7 @@ p.introduction {
   font-weight: 300;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
-  color: #A9A9A9;
+  <!-- color: #A9A9A9; -->
 }
 
 p.right {
@@ -196,4 +196,9 @@ ul.about li {
     padding: 0.5em 0;
     padding-left: 0.5em;
     /*padding-right: 1.5em;*/
+}
+
+/* -- background color -- */
+.bg_test {
+  background-color: rgb(228, 224, 137, 0.8);
 }

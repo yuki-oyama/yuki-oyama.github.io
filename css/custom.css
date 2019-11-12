@@ -33,6 +33,16 @@ h2.name > .jp_kana {
   font-size: 0.600em;
 }
 
+h3.name > .jp_kanji {
+  font-weight: 300;
+  font-size: 0.640em;
+}
+
+h3.name > .jp_kana {
+  font-weight: 300;
+  font-size: 0.600em;
+}
+
 ul.profile {
   color: #343a40;
 }
@@ -85,7 +95,7 @@ span.note {
   font-weight: 300;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
-  color: #b2b8c2;
+  <!-- color: #b2b8c2; -->
 }
 
 /* -- for Abel
@@ -128,6 +138,16 @@ p.introduction {
   -webkit-font-smoothing: antialiased;
   <!-- color: #A9A9A9; -->
 }
+
+p.relatedworks {
+  color: #383838;
+}
+
+p.figure {
+  font-weight: 300;
+  text-align:center;
+}
+
 
 p.right {
   text-align: right;

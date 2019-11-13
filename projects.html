@@ -23,6 +23,11 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/custom.css">
 
+    <!-- JS to Enlarge Images -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js" type="text/javascript"></script>
+
     <!--[if lt IE 9]>
       <script src="js/vendor/html5shiv.min.js"></script>
       <script src="js/vendor/respond.min.js"></script>
@@ -54,7 +59,7 @@
           <div class="extra-text visible-xs">
             <a href="#" class="probootstrap-burger-menu"><i>Menu</i></a>
             <h5>Address</h5>
-            <p>GC B2 390 Station 18 CH-1015 Lausanne, Switzerland</p>
+            <p>-</p>
             <h5>Connect</h5>
             <ul class="social-buttons">
               <li><a href="#"><i class="icon-twitter"></i></a></li>
@@ -68,11 +73,234 @@
   <!-- END: header -->
 
   <div class="probootstrap-section">
-    <div class="container text-center">
-      <div class="row">
+    <div class="container">
+      <!-- <div class="row">
         <div class="col-md-6 col-md-offset-3 mb40">
-          <h2 class="name">UNDER CONSTRUCTION<span class="jp_kanji"> | 準備中</span></h2>
+          <h2 class="name">PROJECTS<span class="jp_kanji"> | 研究プロジェクト</span></h2>
         </div>
+      </div> -->
+      <div class="row">
+
+        <div class="col-md-10 col-md-offset-1">
+          <h2 class="name">PROJECTS<span class="jp_kanji"> | 研究プロジェクト</span></h2>
+          <div class="col-md-6">
+            <h3 class="name">Gridlock network analysis
+              <br><span class="jp_kanji">非定常時の経路選択行動分析</span></h3>
+            <p class="figure">
+            <a href="img/graphicalabstracts/GRL.png" data-lightbox="group"><img src="img/graphicalabstracts/GRL.png" class="img-responsive"></a>
+            <!-- Figure: gridlock network analysis -->
+            </p>
+            <p class="project">
+              <span class="roundbox">#GPS</span>
+              <span class="roundbox">#BehaviorModeling</span>
+              <span class="roundbox">#ModelEstimation</span>
+              <span class="roundbox">#Routechoice</span>
+              <br>
+              超混雑等の非定常ネットワークでは，ドライバーの経路選択に関わる意思決定が近視眼的になり，その行動がネットワークの状況をさらに悪化させる可能性がある．
+              従前の経路選択分析は全体最適の仮定に基づくもので，こうした動学的な意思決定のメカニズムを記述できなかった．
+              本プロジェクトでは，割引率の概念を導入した動的逐次経路選択モデルを提案し，そのモデルを複数日・複数時間帯のタクシープローブデータを用いて推定し，
+              ドライバーの経路選択メカニズムの変化を明らかとした．
+              <br>
+              <a href="http://www.sciencedirect.com/science/article/pii/S0968090X17302747" target=”_blank”><i class="fas fa-book-open"></i> Article</a>
+            </p>
+          </div>
+          <div class="col-md-6">
+            <h3 class="name">Route choice measurement
+              <br><span class="jp_kanji">歩行者経路選択行動の観測</span></h3>
+            <p class="figure">
+            <a href="img/graphicalabstracts/SE.png" data-lightbox="group"><img src="img/graphicalabstracts/SE.png" class="img-responsive"></a>
+            <!-- Figure: gridlock network analysis -->
+            </p>
+            <p class="project">
+              <span class="roundbox">#GPS</span>
+              <span class="roundbox">#MeasurementModel</span>
+              <span class="roundbox">#ModelEstimation</span>
+              <span class="roundbox">#Routechoice</span>
+              <br>
+              経路選択モデルの推定に必要な，実際の経路選択行動の情報は通常，GPS等のデータをマップマッチング処理して観測される．
+              しかしデータの観測誤差が大きい場合，特に路地やアーケードの存在する歩行者ネットワークでは，経路観測の不確実性が高く，
+              それによって行動モデルの推定にバイアスが生じる．
+              本プロジェクトでは，観測誤差分散を街路固有の未知変数として扱うリンクベースのベイズ経路観測モデルと，
+              行動モデル・パラメータのバイアスを軽減する構造推定手法を提案した．
+              これにより，観測誤差の影響で，従前では難しかった行動メカニズムの特定に成功した．
+              <br>
+              <a href="https://doi.org/10.1016/j.trc.2018.05.013" target=”_blank”><i class="fas fa-book-open"></i> Article</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-10 col-md-offset-1">
+          <div class="row">
+            <div class="col-md-6">
+              <h3 class="name">Network design for pedestrian activities
+                <br>
+                <span class="jp_kanji">歩行者活動ネットワークの最適化</span>
+              </h3>
+              <p class="figure">
+              <a href="img/graphicalabstracts/cpij52_solutions.png" data-lightbox="group"><img src="img/graphicalabstracts/cpij52_solutions.png" class="img-responsive"></a>
+              </p>
+              <p class="project">
+                <span class="roundbox">#Optimization</span>
+                <span class="roundbox">#NetworkAssignment</span>
+                <span class="roundbox">#ActivityModeling</span>
+                <br>
+                ネットワーク最適化（Network design）は，人々の移動需要の予測を下敷きにしたネットワーク設計変数の決定問題であり，
+                主に道路交通ネットワークを対象に研究が進められてきた．
+                本プロジェクトでは，歩行者の街路設計変数が及ぼす影響を，移動のみならず活動（まちなかでの時間利用）の視点から考えるため，
+                「歩行者の活動ネットワーク」最適化問題へと枠組みを拡張した．
+                実際に，回遊行動への影響を考慮した松山市中心市街地における街路ネットワーク設計へ適用し，投入予算に応じた（パレート）最適解の集合を示した．
+                <br>
+                <a href="https://www.jstage.jst.go.jp/article/journalcpij/52/3/52_810/_article/-char/ja/" target=”_blank”><i class="fas fa-book-open"></i> Article</a>
+                <a href="#" target=”_blank”><i class="fab fa-slideshare"></i> Presentation</a>
+              </p>
+            </div>
+            <div class="col-md-6">
+              <h3 class="name">Activity assignment model
+                <br>
+                <span class="jp_kanji">活動配分モデルの開発</span></h3>
+                <p class="figure">
+                <a href="img/graphicalabstracts/AA_tsn.png" data-lightbox="group"><img src="img/graphicalabstracts/AA_tsn.png" class="img-responsive"></a>
+                </p>
+                <p class="project">
+                  <span class="roundbox">#ActivityModeling</span>
+                  <span class="roundbox">#NetworkAssignment</span>
+                  <span class="roundbox">#Routechoice</span>
+                  <br>
+                  歩行者の回遊行動は，活動場所・活動時間，そして移動街路の選択がミクロなレベルで組み合わさった，複雑な意思決定の問題である．
+                  本プロジェクトは，マルコフ型の経路選択モデルを時空間ネットワーク上へ展開し，時間制約下での「活動経路」選択モデルとして，
+                  それらの選択を統合的に記述した．
+                  さらに配分モデルへと拡張し，ネットワーク上の集合的な移動・活動分布を評価可能な枠組みを提示した．
+                  <br>
+                  <a href="https://www.jstage.jst.go.jp/article/journalcpij/51/3/51_680/_article/-char/ja/" target=”_blank”><i class="fas fa-book-open"></i> Article</a>
+                  <a href="#" target=”_blank”><i class="fab fa-slideshare"></i> Presentation</a>
+                </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-10 col-md-offset-1">
+          <div class="row">
+            <div class="col-md-6">
+              <h3 class="name">Design of urban edge
+                <br>
+                <span class="jp_kanji">空間領域の設計手法</span></h3>
+                <p class="figure">
+                <a href="img/graphicalabstracts/designdiagram.pdf" data-lightbox="group"><img src="img/graphicalabstracts/designdiagram.pdf" class="img-responsive"></a>
+                </p>
+                <p class="project">
+                  <span class="roundbox">#UrbanDesign</span>
+                  <span class="roundbox">#UrbanPlanning</span>
+                  <span class="roundbox">#NetworkAssignment</span>
+                  <span class="roundbox">#SojournActivity</span>
+                  <br>
+                  修士プロジェクト「滞在効用を導入した均衡配分による空間領域の設計手法とその適用
+                  Design method for spatial domain with urban edges using sojourn utility into equilibrium theory」
+                  （東京大学大学院都市工学専攻, 2014年2月）．
+                  まちなかの施設配置問題を，行動的なメカニズムの釣り合い条件として記述することを試み，
+                  移動体通信データの分析と組み合わせて松山市のプランニングとして落とし込んだ．
+                  <br>
+                  <a href="#" target=”_blank”><i class="fas fa-book"></i> Thesis</a>
+                  <a href="img/files/presen_oyama_master.pdf" target=”_blank”><i class="fab fa-slideshare"></i> Presentation</a>
+                  <a href="img/files/panel_oyama_master.pdf" target=”_blank”><i class="fas fa-columns"></i> Panel</a>
+                  <br><span class="smallnote">※論文未アップロード．プレゼン・パネルは重いので注意してください．</span>
+                </p>
+            </div>
+            <div class="col-md-6">
+              <h3 class="name">Need-based activity generation analysis
+                <br>
+                <span class="jp_kanji">活動欲求に基づく活動発生分析</span>
+              </h3>
+              <p class="figure">
+                <a href="img/graphicalabstracts/Needs.png" data-lightbox="group"><img src="img/graphicalabstracts/Needs.png" class="img-responsive"></a>
+              </p>
+              <p class="project">
+                <span class="roundbox">#BehaviorModeling</span>
+                <span class="roundbox">#ModelEstimation</span>
+                <span class="roundbox">#Psychology</span>
+                <span class="roundbox">#ActivityModeling</span>
+                <br>
+                本プロジェクトは，従前研究手法では難しかった回遊行動の心理的メカニズムに対して，
+                「活動欲求」の概念を導入した離散-連続モデルを提示し，離散的な活動実行選択と
+                連続的な時間選択のシークエンスが互いに関連する回遊行動を記述することに成功した．
+                「小滞在」がもつ媒介活動としての意味に着目した実行動データの分析により，
+                まちなかの交通・活動施設の配置が小滞在の活動発生確率と滞在時間に及ぼす影響を
+                定量的に明らかとした．
+                <br>
+                <a href="https://www.jstage.jst.go.jp/article/journalcpij/49/3/49_375/_article/-char/ja/" target=”_blank”><i class="fas fa-book-open"></i> Article</a>
+                <a href="#" target=”_blank”><i class="fab fa-slideshare"></i> Presentation</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-10 col-md-offset-1">
+          <div class="row">
+            <div class="col-md-6">
+              <h3 class="name">Pedestrian street choice analysis
+                <br>
+                <span class="jp_kanji">歩行者の街路選択行動</span>
+              </h3>
+              <p class="figure">
+                <a href="img/graphicalabstracts/cpij47_en.png" data-lightbox="group"><img src="img/graphicalabstracts/cpij47_en.png" class="img-responsive"></a>
+              </p>
+              <p class="project">
+                <span class="roundbox">#MachineLearning</span>
+                <span class="roundbox">#BehaviorModeling</span>
+                <span class="roundbox">#ModelEstimation</span>
+                <span class="roundbox">#RouteChoice</span>
+                <br>
+                本プロジェクトでは，まず，多彩な街路環境変数から渋谷の街路景観パタンをクラスタリングし，
+                さらに街路景観パタンが歩行者の逐次的な街路選択行動に及ぼす影響を定量的に分析した．
+                その結果，鉤型に連続する景観パタンの類似した街路が選択されやすい傾向を明らかとした．
+                なお，本プロジェクトは柿元淳子氏の2011年度東京大学修士論文「歩行者の移動軌跡に着目した都市街路網における経路選択機構の分析」に基づくものである．
+                <br>
+                <a href="https://www.jstage.jst.go.jp/article/journalcpij/47/3/47_643/_article/-char/ja/" target=”_blank”><i class="fas fa-book-open"></i> Article</a>
+                <a href="#" target=”_blank”><i class="fab fa-slideshare"></i> Presentation</a>
+              </p>
+            </div>
+            <div class="col-md-6">
+              <h3 class="name">Interaction in a shared space
+                <br>
+                <span class="jp_kanji">共有空間における衝突回避・譲歩行動</span>
+              </h3>
+              <p class="figure">
+                <a href="img/graphicalabstracts/PedVeh.png" data-lightbox="group"><img src="img/graphicalabstracts/PedVeh.png" class="img-responsive"></a>
+              </p>
+              <p class="project">
+                <span class="roundbox">#Pedestrian</span>
+                <span class="roundbox">#Microsimulation</span>
+                <span class="roundbox">#GameTheory</span>
+                <span class="roundbox">#ModelEstimation</span>
+                <br>
+                共有空間（Shared space）の設計において，歩行者と，自動車等他の交通主体との相互作用を理解することは重要である．
+                本プロジェクトは，歩行者と自動車のミクロな動きとその相互作用を，ゲーム理論のメカニズムを組み込んだ離散選択モデルによって記述した．
+                なお，本プロジェクトは北川直樹氏の2009年度東京大学修士論文「移動空間の更新に伴う歩行者と自動車の相互規範の変化」に基づくものである．
+                <br>
+                <a href="#" target=”_blank”><i class="fab fa-slideshare"></i> Presentation</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-10 col-md-offset-1">
+          <div class="row">
+            <div class="col-md-6">
+
+            </div>
+            <div class="col-md-6">
+              <h3 class="name">
+                <br>
+                <span class="jp_kanji"></span>
+              </h3>
+              <p class="figure">
+              </p>
+              <p class="project">
+              </p>
+            </div>
+          </div>
+        </div>
+
+
       </div>
     </div>
   </div>

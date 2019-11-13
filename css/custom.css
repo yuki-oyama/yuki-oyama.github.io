@@ -98,6 +98,17 @@ span.note {
   <!-- color: #b2b8c2; -->
 }
 
+span.smallnote {
+  background: #ffffff;
+  font-size: 12px;
+  font-family: "Roboto", 'Noto Sans JP', sans-serif;
+  line-height: 1.5;
+  font-weight: 300;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  <!-- color: #b2b8c2; -->
+}
+
 /* -- for Abel
 p.jp {
   font-size: 15px;
@@ -131,6 +142,17 @@ p.update {
 p.introduction {
   background: #ffffff;
   font-size: 13px;
+  font-family: "Roboto", 'Noto Sans JP', sans-serif;
+  line-height: 1.5;
+  font-weight: 300;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  <!-- color: #A9A9A9; -->
+}
+
+p.project {
+  background: #ffffff;
+  font-size: 12.5px;
   font-family: "Roboto", 'Noto Sans JP', sans-serif;
   line-height: 1.5;
   font-weight: 300;
@@ -182,6 +204,12 @@ span.acceptance-rate {
 
 span.underline {
   text-decoration: underline;
+}
+
+span.roundbox {
+    color: #E9967A;/*文字色*/
+    border: solid 1px #E9967A;/*線*/
+    border-radius: 5px;/*角の丸み*/
 }
 
 /* -- ol -- */

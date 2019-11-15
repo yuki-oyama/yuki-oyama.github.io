@@ -96,10 +96,23 @@
               <span class="roundbox">#ModelEstimation</span>
               <span class="roundbox">#Routechoice</span>
               <br>
-              超混雑等の非定常ネットワークでは，ドライバーの経路選択に関わる意思決定が近視眼的になり，その行動がネットワークの状況をさらに悪化させる可能性がある．
+              In extraordinary networks, such as hyper-congested networks,
+              drivers do have little knowledge of networks due to a lack of experience or information.
+              In such a context, drivers choose routes based on dynamic decision making,
+              which is sequential and somewhat forward-looking,
+              and this can make the network throughput even worse.
+              In this project we propose a dynamic route choice model with a sequential discount rate,
+              which can describe the dynamic decisions of drivers,
+              while the previous models can model either global or myopic decisions.
+              We estimated the model using taxi probe data in a gridlock network
+              and analyzed the change of drivers' behavioral mechanisms.
+              <br>
+              超混雑等の非定常ネットワークでは，ドライバーの経路選択に関わる意思決定が近視眼的になり，
+              その行動がネットワークの状況をさらに悪化させる可能性がある．
               従前の経路選択分析は全体最適の仮定に基づくもので，こうした動学的な意思決定のメカニズムを記述できなかった．
-              本プロジェクトでは，割引率の概念を導入した動的逐次経路選択モデルを提案し，そのモデルを複数日・複数時間帯のタクシープローブデータを用いて推定し，
-              ドライバーの経路選択メカニズムの変化を明らかとした．
+              本プロジェクトでは，割引率の概念を導入した動的逐次経路選択モデルを提案し，
+              そのモデルを東日本大震災発生日を含む複数日・複数時間帯のタクシープローブデータに適用し，
+              災害時のドライバーの経路選択メカニズムの変化を明らかとした．
               <br>
               <a href="http://www.sciencedirect.com/science/article/pii/S0968090X17302747" target=”_blank”><i class="fas fa-book-open"></i> Article (EN)</a>
             </p>
@@ -116,6 +129,14 @@
               <span class="roundbox">#MeasurementModel</span>
               <span class="roundbox">#ModelEstimation</span>
               <span class="roundbox">#Routechoice</span>
+              <br>
+              Route choice behavior in real networks are usually measured
+              by matching GPS location data with real maps.
+              When measurement errors of data are large, in particular urban pedestrian networks where narrow streets or streets with arcades,
+              the measurement uncertainty in the map-matching process leads to biases in the route choice model estimation.
+              In this project, we propose 1) a link-based Bayesian route measurement model
+              that estimates street-specific variances of measurement errors
+              and 2) a structural estimation method that reduces the biases in parameter estimation.
               <br>
               経路選択モデルの推定に必要な，実際の経路選択行動の情報は通常，GPS等のデータをマップマッチング処理して観測される．
               しかしデータの観測誤差が大きい場合，特に路地やアーケードの存在する歩行者ネットワークでは，経路観測の不確実性が高く，
@@ -144,6 +165,13 @@
                 <span class="roundbox">#NetworkAssignment</span>
                 <span class="roundbox">#ActivityModeling</span>
                 <br>
+                Network design is an optimization framework based on the prediction of travel demand and
+                has been mainly applied in studies for the road traffic networks.
+                This project extends the framework to "pedestrian activity network design" to consider
+                the impact of design in terms of activities (i.e. time-use) as well as of travels.
+                Using it, we formulated a pedestrian network design problem for the city center of Matsuyama-city, Japan,
+                and showed the Pareto frontier solution set with different budgets.
+                <br>
                 ネットワーク最適化（Network design）は，人々の移動需要の予測を下敷きにしたネットワーク設計変数の決定問題であり，
                 主に道路交通ネットワークを対象に研究が進められてきた．
                 本プロジェクトでは，歩行者の街路設計変数が及ぼす影響を，移動のみならず活動（まちなかでの時間利用）の視点から考えるため，
@@ -165,6 +193,13 @@
                   <span class="roundbox">#ActivityModeling</span>
                   <span class="roundbox">#NetworkAssignment</span>
                   <span class="roundbox">#Routechoice</span>
+                  <br>
+                  Pedestrian sojourn activity is a complicated decision which includes the choices of activity places,
+                  durations and walking routes for multiple activities.
+                  This project proposes an "activity path" choice model with time-space constraints
+                  by extending a Markovian route choice model in a time-space network.
+                  This model can also be used for network assignment with which we can evaluate
+                  aggregate activity demand patterns in a network.
                   <br>
                   歩行者の回遊行動は，活動場所・活動時間，そして移動街路の選択がミクロなレベルで組み合わさった，複雑な意思決定の問題である．
                   本プロジェクトは，マルコフ型の経路選択モデルを時空間ネットワーク上へ展開し，時間制約下での「活動経路」選択モデルとして，
@@ -193,8 +228,10 @@
                   <span class="roundbox">#NetworkAssignment</span>
                   <span class="roundbox">#SojournActivity</span>
                   <br>
-                  修士プロジェクト「滞在効用を導入した均衡配分による空間領域の設計手法とその適用
-                  Design method for spatial domain with urban edges using sojourn utility into equilibrium theory」
+                  The Master's degree project by Yuki Oyama "Design method for spatial domain with urban edges using sojourn utility into equilibrium theory"
+                  at the University of Tokyo, Department of Urban Engineering, in 2014.
+                  <br>
+                  修士プロジェクト「滞在効用を導入した均衡配分による空間領域の設計手法とその適用」
                   （東京大学大学院都市工学専攻, 2014年2月）．
                   まちなかの施設配置問題を，行動的なメカニズムの釣り合い条件として記述することを試み，
                   移動体通信データの分析と組み合わせて松山市のプランニングとして落とし込んだ．
@@ -218,6 +255,13 @@
                 <span class="roundbox">#ModelEstimation</span>
                 <span class="roundbox">#Psychology</span>
                 <span class="roundbox">#ActivityModeling</span>
+                <br>
+                This project incorporates a psychological mechanism called "activity needs"
+                into a discrete-continuous model to describe the sequence of
+                activity generations and duration choices.
+                We analyzed the model using real pedestrian trajectory data
+                in the city center of Matsuyama, Japan, focusing on the role of "small" activities and
+                locations of urban facilities.
                 <br>
                 本プロジェクトは，従前研究手法では難しかった回遊行動の心理的メカニズムに対して，
                 「活動欲求」の概念を導入した離散-連続モデルを提示し，離散的な活動実行選択と
@@ -250,6 +294,11 @@
                 <span class="roundbox">#ModelEstimation</span>
                 <span class="roundbox">#RouteChoice</span>
                 <br>
+                This project first analyzes the streetscape pattern in
+                Shibuya city center network by clustering approach based on
+                street built-environment data. We then study
+                the streetscape effect on pedestrian street choice behavior.
+                <br>
                 本プロジェクトでは，まず，多彩な街路環境変数から渋谷の街路景観パタンをクラスタリングし，
                 さらに街路景観パタンが歩行者の逐次的な街路選択行動に及ぼす影響を定量的に分析した．
                 その結果，鉤型に連続する景観パタンの類似した街路が選択されやすい傾向を明らかとした．
@@ -272,6 +321,11 @@
                 <span class="roundbox">#Microsimulation</span>
                 <span class="roundbox">#GameTheory</span>
                 <span class="roundbox">#ModelEstimation</span>
+                <br>
+                For designing "shared space"s, it is important to better understand
+                the interactions between pedestrians and the other agents like vehicles.
+                This project develops discrete choice models with game theory to
+                describe the micro movements of pedestrians and of vehicles as well as their interactions.
                 <br>
                 共有空間（Shared space）の設計において，歩行者と，自動車等他の交通主体との相互作用を理解することは重要である．
                 本プロジェクトは，歩行者と自動車のミクロな動きとその相互作用を，ゲーム理論のメカニズムを組み込んだ離散選択モデルによって記述した．

@@ -45,6 +45,9 @@ h3.name > .jp_kana {
 
 ul.profile {
   color: #343a40;
+  font-size: 15px;
+  font-family: "Roboto", 'Noto Sans JP', sans-serif;
+  font-weight: 300;
 }
 
 .probootstrap-section p, ul.black, ol.awards li.jp, .en {

@@ -81,71 +81,121 @@
       </div> -->
       <div class="row">
         <div class="col-md-10 col-md-offset-1">
-          <h2 class="name">PROJECTS<span class="jp_kanji"> | 研究プロジェクト概要 (only before 2019; under construction)</span></h2>
+          <h2 class="name">PROJECTS<span class="jp_kanji"> | 研究プロジェクト概要 </span></h2>
           <div class="col-md-6">
-            <h3 class="name">Gridlock network analysis
-              <br><span class="jp_kanji">非定常時の経路選択行動分析</span></h3>
+            <h3 class="name">Network-GEV equilibrium assignment
+              <br><span class="jp_kanji">確率的利用者均衡配分のモデルと解法</span></h3>
             <p class="figure">
-            <a href="img/graphicalabstracts/GRL.png" data-lightbox="group"><img src="img/graphicalabstracts/GRL.png" class="img-responsive"></a>
-            <!-- Figure: gridlock network analysis -->
+            <a href="img/graphicalabstracts/objective_2q.png" data-lightbox="group" style="padding:0px">
+              <img src="img/graphicalabstracts/objective_2q.png" class="img-responsive"></a>
             </p>
             <p class="project">
-              <span class="roundbox">#GPS</span>
-              <span class="roundbox">#BehaviorModeling</span>
-              <span class="roundbox">#ModelEstimation</span>
-              <span class="roundbox">#Routechoice</span>
+              <span class="roundbox">#TrafficAssignment</span>
+              <span class="roundbox">#Equilibrium</span>
+              <span class="roundbox">#RouteChoice</span>
+              <span class="roundbox">#SolutionAlgorithm</span>
               <br>
-              In extraordinary networks, such as hyper-congested networks,
-              drivers do have little knowledge of networks due to a lack of experience or information.
-              In such a context, drivers choose routes based on dynamic decision making,
-              which is sequential and somewhat forward-looking,
-              and this can make the network throughput even worse.
-              In this project we propose a dynamic route choice model with a sequential discount rate,
-              which can describe the dynamic decisions of drivers,
-              while the previous models can model either global or myopic decisions.
-              We estimated the model using taxi probe data in a gridlock network
-              and analyzed the change of drivers' behavioral mechanisms.
+              This study establishes Markovian traffic equilibrium assignment based on the network generalized extreme value (NGEV) model, which we call NGEV equilibrium assignment. The use of the NGEV model for route choice modeling has recently been proposed, and it enables capturing the path correlation without explicit path enumeration. However, the theoretical properties of the model in traffic assignment have yet to be investigated in the literature, which has limited the practical applicability of the NGEV model in the traffic assignment field. This study addresses the research gap by providing the theoretical developments necessary for the NGEV equilibrium assignment. We first show that the NGEV assignment can be formulated and solved under the same path algebra as the traditional Markovian traffic assignment models. Moreover, we present the equivalent optimization formulations to the NGEV equilibrium assignment. The formulations allow us to derive both primal and dual types of efficient solution algorithms. In particular, the dual algorithm is based on the accelerated gradient method that is for the first time applied in the traffic assignment. The numerical experiments showed the excellent convergence and complementary relationship of the proposed primal and dual algorithms.
               <br>
-              超混雑等の非定常ネットワークでは，ドライバーの経路選択に関わる意思決定が近視眼的になり，
-              その行動がネットワークの状況をさらに悪化させる可能性がある．
-              従前の経路選択分析は全体最適の仮定に基づくもので，こうした動学的な意思決定のメカニズムを記述できなかった．
-              本プロジェクトでは，割引率の概念を導入した動的逐次経路選択モデルを提案し，
-              そのモデルを東日本大震災発生日を含む複数日・複数時間帯のタクシープローブデータに適用し，
-              災害時のドライバーの経路選択メカニズムの変化を明らかとした．
-              <br>
-              <a href="http://www.sciencedirect.com/science/article/pii/S0968090X17302747" target=”_blank”><i class="fas fa-book-open"></i> Article (EN)</a>
+              <a href="https://doi.org/10.1016/j.trb.2021.10.013" target=”_blank”><i class="fas fa-book-open"></i> Article (EN)</a>
             </p>
           </div>
           <div class="col-md-6">
-            <h3 class="name">Route choice measurement
-              <br><span class="jp_kanji">歩行者経路選択行動の観測</span></h3>
+            <h3 class="name">Path set generation for Markovian assignment
+              <br><span class="jp_kanji">効率的交通量配分のための経路集合限定手法</span></h3>
             <p class="figure">
-            <a href="img/graphicalabstracts/SE.png" data-lightbox="group"><img src="img/graphicalabstracts/SE.png" class="img-responsive"></a>
+            <a href="img/graphicalabstracts/tsn_prism.png" data-lightbox="group" style="padding:20px; vertical-align:middle">
+              <img src="img/graphicalabstracts/tsn_prism.png" class="img-responsive"></a>
             <!-- Figure: gridlock network analysis -->
             </p>
             <p class="project">
-              <span class="roundbox">#GPS</span>
-              <span class="roundbox">#MeasurementModel</span>
-              <span class="roundbox">#ModelEstimation</span>
-              <span class="roundbox">#Routechoice</span>
+              <span class="roundbox">#TrafficAssignment</span>
+              <span class="roundbox">#PathSetGeneration</span>
+              <span class="roundbox">#RouteChoice</span>
               <br>
-              Route choice behavior in real networks are usually measured
-              by matching GPS location data with real maps.
-              When measurement errors of data are large, in particular urban pedestrian networks where narrow streets or streets with arcades,
-              the measurement uncertainty in the map-matching process leads to biases in the route choice model estimation.
-              In this project, we propose 1) a link-based Bayesian route measurement model
-              that estimates street-specific variances of measurement errors
-              and 2) a structural estimation method that reduces the biases in parameter estimation.
-              <br>
+              This paper deals with a main limitation of Markovian traffic assignment (MTA) models: when the network includes cyclic structures and the link costs are small enough, the fact that the MTA models assign traffic flows to all feasible paths causes computational chal- lenges. This study addresses this issue by proposing a method of restricting path set based on the concept of choice-based prism. To achieve a prism-based path set, a novel network description and the constraints are introduced. These are flexible and compatible with the MTA operation, meaning that our method does not extinguish the mathematical and com- putational advantages of the MTA models. Our network description allows the expected minimum cost to take a value specific for each state, or a pair of node and choice-stage. This enables us to perform traffic assignment with a simple solution procedure, regard- less of parameter setting or network structure. The numerical experiments show that our method solves the computational challenges of the MTA models and that the incorpora- tion of the prism constraints does not increase computational effort required, or rather, it is computationally efficient even when considering the correlation among path utilities.
+              <!--<br>
               経路選択モデルの推定に必要な，実際の経路選択行動の情報は通常，GPS等のデータをマップマッチング処理して観測される．
               しかしデータの観測誤差が大きい場合，特に路地やアーケードの存在する歩行者ネットワークでは，経路観測の不確実性が高く，
               それによって行動モデルの推定にバイアスが生じる．
               本プロジェクトでは，観測誤差分散を街路固有の未知変数として扱うリンクベースのベイズ経路観測モデルと，
               行動モデル・パラメータのバイアスを軽減する構造推定手法を提案した．
-              これにより，観測誤差の影響で，従前では難しかった行動メカニズムの特定に成功した．
+              これにより，観測誤差の影響で，従前では難しかった行動メカニズムの特定に成功した．-->
               <br>
-              <a href="https://doi.org/10.1016/j.trc.2018.05.013" target=”_blank”><i class="fas fa-book-open"></i> Article (EN)</a>
+              <a href="https://doi.org/10.1016/j.trb.2019.02.002" target=”_blank”><i class="fas fa-book-open"></i> Article (EN)</a>
             </p>
+          </div>
+        </div>
+
+        <div class="col-md-10 col-md-offset-1">
+          <div class="row">
+            <div class="col-md-6">
+              <h3 class="name">Gridlock network analysis
+                <br><span class="jp_kanji">非定常時の経路選択行動分析</span></h3>
+              <p class="figure">
+              <a href="img/graphicalabstracts/GRL.png" data-lightbox="group" style="padding:5px; vertical-align:middle">
+                <img src="img/graphicalabstracts/GRL.png" class="img-responsive"></a>
+              <!-- Figure: gridlock network analysis -->
+              </p>
+              <p class="project">
+                <span class="roundbox">#GPS</span>
+                <span class="roundbox">#BehaviorModeling</span>
+                <span class="roundbox">#ModelEstimation</span>
+                <span class="roundbox">#Routechoice</span>
+                <br>
+                In extraordinary networks, such as hyper-congested networks,
+                drivers do have little knowledge of networks due to a lack of experience or information.
+                In such a context, drivers choose routes based on dynamic decision making,
+                which is sequential and somewhat forward-looking,
+                and this can make the network throughput even worse.
+                In this project we propose a dynamic route choice model with a sequential discount rate,
+                which can describe the dynamic decisions of drivers,
+                while the previous models can model either global or myopic decisions.
+                We estimated the model using taxi probe data in a gridlock network
+                and analyzed the change of drivers' behavioral mechanisms.
+                <br>
+                超混雑等の非定常ネットワークでは，ドライバーの経路選択に関わる意思決定が近視眼的になり，
+                その行動がネットワークの状況をさらに悪化させる可能性がある．
+                従前の経路選択分析は全体最適の仮定に基づくもので，こうした動学的な意思決定のメカニズムを記述できなかった．
+                本プロジェクトでは，割引率の概念を導入した動的逐次経路選択モデルを提案し，
+                そのモデルを東日本大震災発生日を含む複数日・複数時間帯のタクシープローブデータに適用し，
+                災害時のドライバーの経路選択メカニズムの変化を明らかとした．
+                <br>
+                <a href="http://www.sciencedirect.com/science/article/pii/S0968090X17302747" target=”_blank”><i class="fas fa-book-open"></i> Article (EN)</a>
+              </p>
+            </div>
+            <div class="col-md-6">
+              <h3 class="name">Route choice measurement
+                <br><span class="jp_kanji">歩行者経路選択行動の観測</span></h3>
+              <p class="figure">
+              <a href="img/graphicalabstracts/SE.png" data-lightbox="group" style="padding:20px; vertical-align:middle">
+                <img src="img/graphicalabstracts/SE.png" class="img-responsive"></a>
+              <!-- Figure: gridlock network analysis -->
+              </p>
+              <p class="project">
+                <span class="roundbox">#GPS</span>
+                <span class="roundbox">#MeasurementModel</span>
+                <span class="roundbox">#ModelEstimation</span>
+                <span class="roundbox">#Routechoice</span>
+                <br>
+                Route choice behavior in real networks are usually measured
+                by matching GPS location data with real maps.
+                When measurement errors of data are large, in particular urban pedestrian networks where narrow streets or streets with arcades,
+                the measurement uncertainty in the map-matching process leads to biases in the route choice model estimation.
+                In this project, we propose 1) a link-based Bayesian route measurement model
+                that estimates street-specific variances of measurement errors
+                and 2) a structural estimation method that reduces the biases in parameter estimation.
+                <br>
+                経路選択モデルの推定に必要な，実際の経路選択行動の情報は通常，GPS等のデータをマップマッチング処理して観測される．
+                しかしデータの観測誤差が大きい場合，特に路地やアーケードの存在する歩行者ネットワークでは，経路観測の不確実性が高く，
+                それによって行動モデルの推定にバイアスが生じる．
+                本プロジェクトでは，観測誤差分散を街路固有の未知変数として扱うリンクベースのベイズ経路観測モデルと，
+                行動モデル・パラメータのバイアスを軽減する構造推定手法を提案した．
+                これにより，観測誤差の影響で，従前では難しかった行動メカニズムの特定に成功した．
+                <br>
+                <a href="https://doi.org/10.1016/j.trc.2018.05.013" target=”_blank”><i class="fas fa-book-open"></i> Article (EN)</a>
+              </p>
+            </div>
           </div>
         </div>
 
@@ -161,7 +211,7 @@
               </p>
               <p class="project">
                 <span class="roundbox">#Optimization</span>
-                <span class="roundbox">#NetworkAssignment</span>
+                <span class="roundbox">#TrafficAssignment</span>
                 <span class="roundbox">#ActivityModeling</span>
                 <br>
                 Network design is an optimization framework based on the prediction of travel demand and
@@ -190,7 +240,7 @@
                 </p>
                 <p class="project">
                   <span class="roundbox">#ActivityModeling</span>
-                  <span class="roundbox">#NetworkAssignment</span>
+                  <span class="roundbox">#TrafficAssignment</span>
                   <span class="roundbox">#Routechoice</span>
                   <br>
                   Pedestrian sojourn activity is a complicated decision which includes the choices of activity places,
@@ -224,7 +274,7 @@
                 <p class="project">
                   <span class="roundbox">#UrbanDesign</span>
                   <span class="roundbox">#UrbanPlanning</span>
-                  <span class="roundbox">#NetworkAssignment</span>
+                  <span class="roundbox">#TrafficAssignment</span>
                   <span class="roundbox">#SojournActivity</span>
                   <br>
                   The Master's degree project by Yuki Oyama "Design method for spatial domain with urban edges using sojourn utility into equilibrium theory"

@@ -164,6 +164,26 @@ p.project {
   <!-- color: #A9A9A9; -->
 }
 
+p.rtopic {
+  background: #ffffff;
+  font-size: 13px;
+  font-family: "Roboto", 'Noto Sans JP', sans-serif;
+  line-height: 1.5;
+  font-weight: 300;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+ol.rtopic {
+  color:#000000;
+  background: #ffffff;
+  font-size: 13px;
+  font-family: "Roboto", 'Noto Sans JP', sans-serif;
+  line-height: 1.5;
+  font-weight: 300;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
 p.relatedworks {
   color: #383838;
 }

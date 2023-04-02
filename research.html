@@ -49,9 +49,9 @@
         <nav role="navigation" class="probootstrap-nav hidden-xs">
           <ul class="probootstrap-main-nav">
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
+            <!--<li><a href="about.html">About</a></li>-->
             <!--<li><a href="news.html">News</a></li>-->
-            <li class="active"><a href="projects.html">Projects</a></li>
+            <li class="active"><a href="research.html">Research</a></li>
             <li><a href="publications.html">Publications</a></li>
             <li><a href="awards.html">Awards/Grants</a></li>
             <!-- <li><a href="contact.html">Contact</a></li> -->
@@ -81,24 +81,37 @@
       </div> -->
       <div class="row">
         <div class="col-md-10 col-md-offset-1">
-          <h2 class="name">RESEARCH<span class="jp_kanji"> | 主な研究テーマ </span></h2>
+          <h2 class="name">RESEARCH TOPICS</h2> <!--<span class="jp_kanji"> | 主な研究テーマ </span>-->
           <div class="col-md-12">
-            <h3 class="name">Network Route Choice Modeling
-              <br><span class="jp_kanji">ネットワーク行動モデルの開発</span></h3>
+            <h3 class="name">Modeling of Network Route Choice Behavior</h3> <!--<br><span class="jp_kanji">ネットワーク行動モデルの開発</span>-->
           </div>
           <div class="col-md-7">
             <p class="rtopic">
-              This study establishes Markovian traffic equilibrium assignment based on the network generalized extreme value (NGEV) model, which we call NGEV equilibrium assignment. The use of the NGEV model for route choice modeling has recently been proposed, and it enables capturing the path correlation without explicit path enumeration. However, the theoretical properties of the model in traffic assignment have yet to be investigated in the literature, which has limited the practical applicability of the NGEV model in the traffic assignment field. This study addresses the research gap by providing the theoretical developments necessary for the NGEV equilibrium assignment. We first show that the NGEV assignment can be formulated and solved under the same path algebra as the traditional Markovian traffic assignment models. Moreover, we present the equivalent optimization formulations to the NGEV equilibrium assignment. The formulations allow us to derive both primal and dual types of efficient solution algorithms. In particular, the dual algorithm is based on the accelerated gradient method that is for the first time applied in the traffic assignment. The numerical experiments showed the excellent convergence and complementary relationship of the proposed primal and dual algorithms.
-              <br>
-              <span class="roundbox">#TrafficAssignment</span>
-              <span class="roundbox">#Equilibrium</span>
               <span class="roundbox">#RouteChoice</span>
-              <span class="roundbox">#SolutionAlgorithm</span>
+              <span class="roundbox">#DiscreteChoice</span>
+              <span class="roundbox">#GPS</span>
+              <span class="roundbox">#Network</span>
+              <span class="roundbox">#MachineLearning</span>
+            </p>
+            <p class="rtopic">
+              Route choice models predict which path a given agent takes to travel from a location to another in a network,
+              and it has been a central topic to transportation planning/engineering and studied in various fields of research.
+              However, modeling route choices is challenging mainly due to the complex structure of networks.
+              <br>
+              We have been contributing to the state of the art by developing new methodologies for route choice analysis.
+              In particular, we are interested in the link-based approach, which does not require path enumeration while modeling stochastic route choice behavior.
+              Our contributions so far include the developments of a model in extraordinary networks,
+              a method to learn behavior from raw GPS trajectories with measurement uncertainty,
+              and an algorithm to capture positive network attributes within a link-based framework.
+              <br>
+              Our models and algorithms have been tested in various types of networks, such as vehicular and pedestrian networks,
+              in ordinary and extraordinary situations.
+              <br>
             </p>
           </div>
           <div class="col-md-5">
             <p class="figure">
-            <a href="img/graphicalabstracts/GRL.png" data-lightbox="group" style="padding:5px; vertical-align:middle">
+            <a href="img/graphicalabstracts/GRL.png" data-lightbox="group" style="padding:0px; vertical-align:middle">
               <img src="img/graphicalabstracts/GRL.png" class="img-responsive"></a>
             <!-- Figure: gridlock network analysis -->
             </p>
@@ -127,11 +140,8 @@
             </ol>
           </div>
 
-
-
           <div class="col-md-12">
-            <h3 class="name">Human-Centric Urban Planning
-              <br><span class="jp_kanji">人間中心の都市計画</span></h3>
+            <h3 class="name">Network Traffic Assignment</h3>
           </div>
           <div class="col-md-7">
             <p class="rtopic">
@@ -140,7 +150,135 @@
               <span class="roundbox">#TrafficAssignment</span>
               <span class="roundbox">#Equilibrium</span>
               <span class="roundbox">#RouteChoice</span>
-              <span class="roundbox">#SolutionAlgorithm</span>
+              <span class="roundbox">#Network</span>
+            </p>
+          </div>
+          <div class="col-md-5">
+            <p class="figure">
+            <a href="img/graphicalabstracts/netpic.png" data-lightbox="group" style="padding:5px; vertical-align:middle">
+              <img src="img/graphicalabstracts/netpic.png" class="img-responsive"></a>
+            <!-- Figure: gridlock network analysis -->
+            </p>
+          </div>
+          <div class="col-md-12">
+            <ol class="rtopic">
+              Selected publications on this topic:
+              <li>
+                Akamatsu, T., Satsukawa, K., <span style="font-weight: 400">Oyama, Y.</span> (2023)
+                Global stability of day-to-day dynamics for scheduled-based Markovian transit assignment with boadring queues.
+              </li>
+              <li>
+                <span style="font-weight: 400">Oyama, Y.</span>, Hara, Y., Akamatsu, T. (2022)
+                <a href="https://www.sciencedirect.com/science/article/pii/S0191261521001934" target=”_blank”>
+                  Markovian traffic equilibrium assignment based on network generalized extreme value model.
+                </a>
+                <i>Transportation Research Part B: Methodological</i> 155: 135-159.
+              </li>
+              <li>
+                <span style="font-weight: 400">Oyama, Y.</span>,  Hato, E. (2019)
+                <a href="https://doi.org/10.1016/j.trb.2019.02.002" target=”_blank”>Prism-based path set restriction for solving Markovian traffic assignment problem.</a>
+                <i>Transportation Research Part B: Methodological</i> 122: 528-546.
+              </li>
+            </ol>
+          </div>
+
+          <div class="col-md-12">
+            <h3 class="name">Network Design for Human-Centric Cities</h3>
+          </div>
+          <div class="col-md-7">
+            <p class="rtopic">
+              This study establishes Markovian traffic equilibrium assignment based on the network generalized extreme value (NGEV) model, which we call NGEV equilibrium assignment. The use of the NGEV model for route choice modeling has recently been proposed, and it enables capturing the path correlation without explicit path enumeration. However, the theoretical properties of the model in traffic assignment have yet to be investigated in the literature, which has limited the practical applicability of the NGEV model in the traffic assignment field. This study addresses the research gap by providing the theoretical developments necessary for the NGEV equilibrium assignment. We first show that the NGEV assignment can be formulated and solved under the same path algebra as the traditional Markovian traffic assignment models. Moreover, we present the equivalent optimization formulations to the NGEV equilibrium assignment. The formulations allow us to derive both primal and dual types of efficient solution algorithms. In particular, the dual algorithm is based on the accelerated gradient method that is for the first time applied in the traffic assignment. The numerical experiments showed the excellent convergence and complementary relationship of the proposed primal and dual algorithms.
+              <br>
+              <span class="roundbox">#NetworkDesign</span>
+              <span class="roundbox">#TrafficAssignment</span>
+              <span class="roundbox">#Optimization</span>
+              <span class="roundbox">#Pedestrian</span>
+            </p>
+          </div>
+          <div class="col-md-5">
+            <p class="figure">
+            <a href="img/graphicalabstracts/designdiagram.png" data-lightbox="group" style="padding:5px; vertical-align:middle">
+              <img src="img/graphicalabstracts/designdiagram.png" class="img-responsive"></a>
+            <!-- Figure: gridlock network analysis -->
+            </p>
+          </div>
+          <div class="col-md-12">
+            <ol class="rtopic">
+              Selected publications on this topic:
+              <li class="jp">
+                村上颯一朗, 大山雄己 (2022)
+                <a href="https://doi.org/10.11361/journalcpij.57.622" target="_blank">マルチモーダル均衡配分モデルに基づく歩行者専用道路の最適配置計画 -川越市街地における歩行者街路網の創出を例として-.</a>
+                都市計画論文集 57(3): 622-629.
+                <br>
+              </li>
+              <li>
+                <span style="font-weight: 400">Oyama, Y.</span>, Scarinci, R., Bierlaire, M. (2018)
+                Optimal capacity location problem of parking and accelerated moving walkways to design a car-free city center.
+                The 7th symposium arranged by European Association for Research in Transportation (hEART), Athens, Greece.
+              </li>
+              <li class="jp">
+                大山雄己, 羽藤英二 (2017)
+                <a href="https://www.jstage.jst.go.jp/article/journalcpij/52/3/52_810/_article/-char/ja/" target="_blank">多目的最適化に基づく歩行者の活動ネットワークデザイン.</a>
+                都市計画論文集 52(3): 810-817.
+              </li>
+            </ol>
+          </div>
+
+
+
+          <div class="col-md-12">
+            <h3 class="name">Pedestrian Activity Modeling</h3>
+          </div>
+          <div class="col-md-7">
+            <p class="rtopic">
+              This study establishes Markovian traffic equilibrium assignment based on the network generalized extreme value (NGEV) model, which we call NGEV equilibrium assignment. The use of the NGEV model for route choice modeling has recently been proposed, and it enables capturing the path correlation without explicit path enumeration. However, the theoretical properties of the model in traffic assignment have yet to be investigated in the literature, which has limited the practical applicability of the NGEV model in the traffic assignment field. This study addresses the research gap by providing the theoretical developments necessary for the NGEV equilibrium assignment. We first show that the NGEV assignment can be formulated and solved under the same path algebra as the traditional Markovian traffic assignment models. Moreover, we present the equivalent optimization formulations to the NGEV equilibrium assignment. The formulations allow us to derive both primal and dual types of efficient solution algorithms. In particular, the dual algorithm is based on the accelerated gradient method that is for the first time applied in the traffic assignment. The numerical experiments showed the excellent convergence and complementary relationship of the proposed primal and dual algorithms.
+              <br>
+              <span class="roundbox">#Pedestrian</span>
+              <span class="roundbox">#TimeUse</span>
+              <span class="roundbox">#RouteChoice</span>
+              <span class="roundbox">#TimeSpaceNetwork</span>
+            </p>
+          </div>
+          <div class="col-md-5">
+            <p class="figure">
+            <a href="img/graphicalabstracts/AA_tsn.png" data-lightbox="group" style="padding:5px; vertical-align:middle">
+              <img src="img/graphicalabstracts/AA_tsn.png" class="img-responsive"></a>
+            <!-- Figure: gridlock network analysis -->
+            </p>
+          </div>
+          <div class="col-md-12">
+            <ol class="rtopic">
+              Selected publications on this topic:
+              <li>
+                <span style="font-weight: 400">Oyama, Y.</span> (2023)
+                Spatial city image and its formative factors: A street-based area cognition analysis.
+                <a href="https://ssrn.com/abstract=4374014" target="_blank">[SSRN]</a>
+              </li>
+              <li class="jp">
+                大山雄己, 羽藤英二 (2016)
+                <a href="https://www.jstage.jst.go.jp/article/journalcpij/51/3/51_680/_article/-char/ja/" target="_blank">時空間制約と経路相関を考慮した歩行者の活動配分問題.</a>
+                都市計画論文集 51(3): 680-687.
+              </li>
+              <li class="jp">
+                大山雄己, 福山祥代, 羽藤英二 (2014)
+                <a href="https://www.jstage.jst.go.jp/article/journalcpij/49/3/49_375/_article/-char/ja/" target="_blank">活動欲求を考慮した離散-連続モデルによる小滞在発生メカニズムの分析.</a>
+                都市計画論文集 49(3): 375-380.
+              </li>
+            </ol>
+          </div>
+
+
+          <div class="col-md-12">
+            <h3 class="name">Logistics System Design</h3>
+          </div>
+          <div class="col-md-7">
+            <p class="rtopic">
+              This study establishes Markovian traffic equilibrium assignment based on the network generalized extreme value (NGEV) model, which we call NGEV equilibrium assignment. The use of the NGEV model for route choice modeling has recently been proposed, and it enables capturing the path correlation without explicit path enumeration. However, the theoretical properties of the model in traffic assignment have yet to be investigated in the literature, which has limited the practical applicability of the NGEV model in the traffic assignment field. This study addresses the research gap by providing the theoretical developments necessary for the NGEV equilibrium assignment. We first show that the NGEV assignment can be formulated and solved under the same path algebra as the traditional Markovian traffic assignment models. Moreover, we present the equivalent optimization formulations to the NGEV equilibrium assignment. The formulations allow us to derive both primal and dual types of efficient solution algorithms. In particular, the dual algorithm is based on the accelerated gradient method that is for the first time applied in the traffic assignment. The numerical experiments showed the excellent convergence and complementary relationship of the proposed primal and dual algorithms.
+              <br>
+              <span class="roundbox">#Logistics</span>
+              <span class="roundbox">#DiscreteChoice</span>
+              <span class="roundbox">#Optimization</span>
+              <span class="roundbox">#DemandManagement</span>
             </p>
           </div>
           <div class="col-md-5">
@@ -154,290 +292,15 @@
             <ol class="rtopic">
               Selected publications on this topic:
               <li>
-                <span style="font-weight: 400">Oyama, Y.</span> (2023)
-                <a href="https://doi.org/10.1016/j.trc.2023.104014" target="_blank">
-                  Capturing positive network attributes during the estimation of recursive logit models: A prism-based approach.
-                </a>
-                <em>Transportation Research Part C: Emerging Technologies</em> 147, 104014.
-                <!--<a href="https://arxiv.org/abs/2204.01215" target=”_blank”>	[arXiv]</a>-->
-              </li>
-              <li>
-                <span style="font-weight: 400">Oyama, Y.</span>,  Hato, E. (2018)
-                <a href="https://doi.org/10.1016/j.trc.2018.05.013" target=”_blank”>Link-based measurement model to estimate route choice parameters in urban pedestrian networks.</a>
-                <i>Transportation Research Part C: Emerging Technologies</i> 93: 62-78.
-              </li>
-              <li>
-                <span style="font-weight: 400">Oyama, Y.</span>,  Hato, E. (2017)
-                <a href="http://www.sciencedirect.com/science/article/pii/S0968090X17302747" target="_blank">A discounted recursive logit model for dynamic gridlock network analysis.</a>
-                <em>Transportation Research Part C: Emerging Technologies</em> 85: 509-527.
+                <span style="font-weight: 400">Oyama, Y.</span>, Fukuda, D., Imura N., Nishinari, K. (2022)
+                E-commerce users' preferences for delivery options.
+                <a href="https://arxiv.org/abs/2301.00666" target="_blank">[arXiv]</a>
               </li>
             </ol>
           </div>
 
 
 
-        </div>
-
-
-
-        <div class="col-md-10 col-md-offset-1">
-          <div class="row">
-            <div class="col-md-6">
-              <h3 class="name">Gridlock network analysis
-                <br><span class="jp_kanji">非定常時の経路選択行動分析</span></h3>
-              <p class="figure">
-              <a href="img/graphicalabstracts/GRL.png" data-lightbox="group" style="padding:5px; vertical-align:middle">
-                <img src="img/graphicalabstracts/GRL.png" class="img-responsive"></a>
-              <!-- Figure: gridlock network analysis -->
-              </p>
-              <p class="project">
-                <span class="roundbox">#GPS</span>
-                <span class="roundbox">#BehaviorModeling</span>
-                <span class="roundbox">#ModelEstimation</span>
-                <span class="roundbox">#Routechoice</span>
-                <br>
-                In extraordinary networks, such as hyper-congested networks,
-                drivers do have little knowledge of networks due to a lack of experience or information.
-                In such a context, drivers choose routes based on dynamic decision making,
-                which is sequential and somewhat forward-looking,
-                and this can make the network throughput even worse.
-                In this project we propose a dynamic route choice model with a sequential discount rate,
-                which can describe the dynamic decisions of drivers,
-                while the previous models can model either global or myopic decisions.
-                We estimated the model using taxi probe data in a gridlock network
-                and analyzed the change of drivers' behavioral mechanisms.
-                <br>
-                超混雑等の非定常ネットワークでは，ドライバーの経路選択に関わる意思決定が近視眼的になり，
-                その行動がネットワークの状況をさらに悪化させる可能性がある．
-                従前の経路選択分析は全体最適の仮定に基づくもので，こうした動学的な意思決定のメカニズムを記述できなかった．
-                本プロジェクトでは，割引率の概念を導入した動的逐次経路選択モデルを提案し，
-                そのモデルを東日本大震災発生日を含む複数日・複数時間帯のタクシープローブデータに適用し，
-                災害時のドライバーの経路選択メカニズムの変化を明らかとした．
-                <br>
-                <a href="http://www.sciencedirect.com/science/article/pii/S0968090X17302747" target=”_blank”><i class="fas fa-book-open"></i> Article (EN)</a>
-              </p>
-            </div>
-            <div class="col-md-6">
-              <h3 class="name">Route choice measurement
-                <br><span class="jp_kanji">歩行者経路選択行動の観測</span></h3>
-              <p class="figure">
-              <a href="img/graphicalabstracts/SE.png" data-lightbox="group" style="padding:20px; vertical-align:middle">
-                <img src="img/graphicalabstracts/SE.png" class="img-responsive"></a>
-              <!-- Figure: gridlock network analysis -->
-              </p>
-              <p class="project">
-                <span class="roundbox">#GPS</span>
-                <span class="roundbox">#MeasurementModel</span>
-                <span class="roundbox">#ModelEstimation</span>
-                <span class="roundbox">#Routechoice</span>
-                <br>
-                Route choice behavior in real networks are usually measured
-                by matching GPS location data with real maps.
-                When measurement errors of data are large, in particular urban pedestrian networks where narrow streets or streets with arcades,
-                the measurement uncertainty in the map-matching process leads to biases in the route choice model estimation.
-                In this project, we propose 1) a link-based Bayesian route measurement model
-                that estimates street-specific variances of measurement errors
-                and 2) a structural estimation method that reduces the biases in parameter estimation.
-                <br>
-                経路選択モデルの推定に必要な，実際の経路選択行動の情報は通常，GPS等のデータをマップマッチング処理して観測される．
-                しかしデータの観測誤差が大きい場合，特に路地やアーケードの存在する歩行者ネットワークでは，経路観測の不確実性が高く，
-                それによって行動モデルの推定にバイアスが生じる．
-                本プロジェクトでは，観測誤差分散を街路固有の未知変数として扱うリンクベースのベイズ経路観測モデルと，
-                行動モデル・パラメータのバイアスを軽減する構造推定手法を提案した．
-                これにより，観測誤差の影響で，従前では難しかった行動メカニズムの特定に成功した．
-                <br>
-                <a href="https://doi.org/10.1016/j.trc.2018.05.013" target=”_blank”><i class="fas fa-book-open"></i> Article (EN)</a>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-10 col-md-offset-1">
-          <div class="row">
-            <div class="col-md-6">
-              <h3 class="name">Network design for pedestrian activities
-                <br>
-                <span class="jp_kanji">歩行者活動ネットワークの最適化</span>
-              </h3>
-              <p class="figure">
-              <a href="img/graphicalabstracts/cpij52_solutions.png" data-lightbox="group"><img src="img/graphicalabstracts/cpij52_solutions.png" class="img-responsive"></a>
-              </p>
-              <p class="project">
-                <span class="roundbox">#Optimization</span>
-                <span class="roundbox">#TrafficAssignment</span>
-                <span class="roundbox">#ActivityModeling</span>
-                <br>
-                Network design is an optimization framework based on the prediction of travel demand and
-                has been mainly applied in studies for the road traffic networks.
-                This project extends the framework to "pedestrian activity network design" to consider
-                the impact of design in terms of activities (i.e. time-use) as well as of travels.
-                Using it, we formulated a pedestrian network design problem for the city center of Matsuyama-city, Japan,
-                and showed the Pareto frontier solution set with different budgets.
-                <br>
-                ネットワーク最適化（Network design）は，人々の移動需要の予測を下敷きにしたネットワーク設計変数の決定問題であり，
-                主に道路交通ネットワークを対象に研究が進められてきた．
-                本プロジェクトでは，歩行者の街路設計変数が及ぼす影響を，移動のみならず活動（まちなかでの時間利用）の視点から考えるため，
-                「歩行者の活動ネットワーク」最適化問題へと枠組みを拡張した．
-                実際に，回遊行動への影響を考慮した松山市中心市街地における街路ネットワーク設計へ適用し，投入予算に応じた（パレート）最適解の集合を示した．
-                <br>
-                <a href="https://www.jstage.jst.go.jp/article/journalcpij/52/3/52_810/_article/-char/ja/" target=”_blank”><i class="fas fa-book-open"></i> Article (JP)</a>
-                <a href="https://www.slideshare.net/YukiOyama5/yuki-oyama-markov-assignment-for-a-pedestrian-activitybased-network-design-problem" target=”_blank”><i class="fab fa-slideshare"></i> Presentation (EN)</a>
-              </p>
-            </div>
-            <div class="col-md-6">
-              <h3 class="name">Activity assignment model
-                <br>
-                <span class="jp_kanji">活動配分モデルの開発</span></h3>
-                <p class="figure">
-                <a href="img/graphicalabstracts/AA_tsn.png" data-lightbox="group"><img src="img/graphicalabstracts/AA_tsn.png" class="img-responsive"></a>
-                </p>
-                <p class="project">
-                  <span class="roundbox">#ActivityModeling</span>
-                  <span class="roundbox">#TrafficAssignment</span>
-                  <span class="roundbox">#Routechoice</span>
-                  <br>
-                  Pedestrian sojourn activity is a complicated decision which includes the choices of activity places,
-                  durations and walking routes for multiple activities.
-                  This project proposes an "activity path" choice model with time-space constraints
-                  by extending a Markovian route choice model in a time-space network.
-                  This model can also be used for network assignment with which we can evaluate
-                  aggregate activity demand patterns in a network.
-                  <br>
-                  歩行者の回遊行動は，活動場所・活動時間，そして移動街路の選択がミクロなレベルで組み合わさった，複雑な意思決定の問題である．
-                  本プロジェクトは，マルコフ型の経路選択モデルを時空間ネットワーク上へ展開し，時間制約下での「活動経路」選択モデルとして，
-                  それらの選択を統合的に記述した．
-                  さらに配分モデルへと拡張し，ネットワーク上の集合的な移動・活動分布を評価可能な枠組みを提示した．
-                  <br>
-                  <a href="https://www.jstage.jst.go.jp/article/journalcpij/51/3/51_680/_article/-char/ja/" target=”_blank”><i class="fas fa-book-open"></i> Article (JP)</a>
-                  <a href="https://www.slideshare.net/YukiOyama5/ss-193101495" target=”_blank”><i class="fab fa-slideshare"></i> Presentation (JP)</a>
-                </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-10 col-md-offset-1">
-          <div class="row">
-            <div class="col-md-6">
-              <h3 class="name">Design of urban edge
-                <br>
-                <span class="jp_kanji">空間領域の設計手法</span></h3>
-                <p class="figure">
-                <a href="img/graphicalabstracts/designdiagram.png" data-lightbox="group"><img src="img/graphicalabstracts/designdiagram.png" class="img-responsive"></a>
-                </p>
-                <p class="project">
-                  <span class="roundbox">#UrbanDesign</span>
-                  <span class="roundbox">#UrbanPlanning</span>
-                  <span class="roundbox">#TrafficAssignment</span>
-                  <span class="roundbox">#SojournActivity</span>
-                  <br>
-                  The Master's degree project by Yuki Oyama "Design method for spatial domain with urban edges using sojourn utility into equilibrium theory"
-                  at the University of Tokyo, Department of Urban Engineering, in 2014.
-                  <br>
-                  修士プロジェクト「滞在効用を導入した均衡配分による空間領域の設計手法とその適用」
-                  （東京大学大学院都市工学専攻, 2014年2月）．
-                  まちなかの施設配置問題を，行動的なメカニズムの釣り合い条件として記述することを試み，
-                  移動体通信データの分析と組み合わせて松山市のプランニングとして落とし込んだ．
-                  <br>
-                  <a href="#" target=”_blank”><i class="fas fa-book"></i> Thesis</a>
-                  <a href="https://www.slideshare.net/YukiOyama5/yuki-oyama-master-project-design-method-for-spatial-domain-with-urban-edges-using-sojourn-utility-into-equilibrium-theory" target=”_blank”><i class="fab fa-slideshare"></i> Presentation</a>
-                  <a href="img/files/panel_oyama_master.pdf" target=”_blank”><i class="fas fa-columns"></i> Panel</a>
-                  <br><span class="smallnote">※論文未アップロード．プレゼン・パネルは重いので注意してください．</span>
-                </p>
-            </div>
-            <div class="col-md-6">
-              <h3 class="name">Need-based activity generation analysis
-                <br>
-                <span class="jp_kanji">活動欲求に基づく活動発生分析</span>
-              </h3>
-              <p class="figure">
-                <a href="img/graphicalabstracts/Needs.png" data-lightbox="group"><img src="img/graphicalabstracts/Needs.png" class="img-responsive"></a>
-              </p>
-              <p class="project">
-                <span class="roundbox">#BehaviorModeling</span>
-                <span class="roundbox">#ModelEstimation</span>
-                <span class="roundbox">#Psychology</span>
-                <span class="roundbox">#ActivityModeling</span>
-                <br>
-                This project incorporates a psychological mechanism called "activity needs"
-                into a discrete-continuous model to describe the sequence of
-                activity generations and duration choices.
-                We analyzed the model using real pedestrian trajectory data
-                in the city center of Matsuyama, Japan, focusing on the role of "small" activities and
-                locations of urban facilities.
-                <br>
-                本プロジェクトは，従前研究手法では難しかった回遊行動の心理的メカニズムに対して，
-                「活動欲求」の概念を導入した離散-連続モデルを提示し，離散的な活動実行選択と
-                連続的な時間選択のシークエンスが互いに関連する回遊行動を記述することに成功した．
-                「小滞在」がもつ媒介活動としての意味に着目した実行動データの分析により，
-                まちなかの交通・活動施設の配置が小滞在の活動発生確率と滞在時間に及ぼす影響を
-                定量的に明らかとした．
-                <br>
-                <a href="https://www.jstage.jst.go.jp/article/journalcpij/49/3/49_375/_article/-char/ja/" target=”_blank”><i class="fas fa-book-open"></i> Article (JP)</a>
-                <a href="https://www.slideshare.net/YukiOyama5/yuki-oyama-incorporating-contextdependent-energy-into-the-pedestrian-dynamic-scheduling-model-with-gps-data" target=”_blank”><i class="fab fa-slideshare"></i> Presentation (EN)</a>
-                <a href="https://www.slideshare.net/YukiOyama5/ss-193100138" target=”_blank”><i class="fab fa-slideshare"></i> Presentation (JP)</a>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-10 col-md-offset-1">
-          <div class="row">
-            <div class="col-md-6">
-              <h3 class="name">Pedestrian street choice analysis
-                <br>
-                <span class="jp_kanji">歩行者の街路選択行動</span>
-              </h3>
-              <p class="figure">
-                <a href="img/graphicalabstracts/cpij47_en.png" data-lightbox="group"><img src="img/graphicalabstracts/cpij47_en.png" class="img-responsive"></a>
-              </p>
-              <p class="project">
-                <span class="roundbox">#MachineLearning</span>
-                <span class="roundbox">#BehaviorModeling</span>
-                <span class="roundbox">#ModelEstimation</span>
-                <span class="roundbox">#RouteChoice</span>
-                <br>
-                This project first analyzes the streetscape pattern in
-                Shibuya city center network by clustering approach based on
-                street built-environment data. We then study
-                the streetscape effect on pedestrian street choice behavior.
-                <br>
-                本プロジェクトでは，まず，多彩な街路環境変数から渋谷の街路景観パタンをクラスタリングし，
-                さらに街路景観パタンが歩行者の逐次的な街路選択行動に及ぼす影響を定量的に分析した．
-                その結果，鉤型に連続する景観パタンの類似した街路が選択されやすい傾向を明らかとした．
-                <!--なお，本プロジェクトは柿元淳子氏の2011年度東京大学修士論文「歩行者の移動軌跡に着目した都市街路網における経路選択機構の分析」に基づくものである．-->
-                <br>
-                <a href="https://www.jstage.jst.go.jp/article/journalcpij/47/3/47_643/_article/-char/ja/" target=”_blank”><i class="fas fa-book-open"></i> Article 1 (JP)</a>
-                <a href="https://www.jstage.jst.go.jp/article/journalcpij/48/3/48_1107/_article/-char/ja/" target=”_blank”><i class="fas fa-book-open"></i> Article 2 (JP)</a>
-                <a href="https://www.slideshare.net/YukiOyama5/ss-193104150" target=”_blank”><i class="fab fa-slideshare"></i> Presentation (JP)</a>
-              </p>
-            </div>
-            <div class="col-md-6">
-              <h3 class="name">Interaction in a shared space
-                <br>
-                <span class="jp_kanji">共有空間における衝突回避・譲歩行動</span>
-              </h3>
-              <p class="figure">
-                <a href="img/graphicalabstracts/PedVeh.png" data-lightbox="group"><img src="img/graphicalabstracts/PedVeh.png" class="img-responsive"></a>
-              </p>
-              <p class="project">
-                <span class="roundbox">#Pedestrian</span>
-                <span class="roundbox">#Microsimulation</span>
-                <span class="roundbox">#GameTheory</span>
-                <span class="roundbox">#ModelEstimation</span>
-                <br>
-                For designing "shared space"s, it is important to better understand
-                the interactions between pedestrians and the other agents like vehicles.
-                This project develops discrete choice models with game theory to
-                describe the micro movements of pedestrians and of vehicles as well as their interactions.
-                <br>
-                共有空間（Shared space）の設計において，歩行者と，自動車等他の交通主体との相互作用を理解することは重要である．
-                本プロジェクトは，歩行者と自動車のミクロな動きとその相互作用を，ゲーム理論のメカニズムを組み込んだ離散選択モデルによって記述した．
-                <!--なお，本プロジェクトは北川直樹氏の2009年度東京大学修士論文「移動空間の更新に伴う歩行者と自動車の相互規範の変化」に基づくものである．-->
-                <br>
-                <a href="#" target=”_blank”><i class="fab fa-slideshare"></i> Presentation (JP)</a>
-              </p>
-            </div>
-          </div>
         </div>
 
         <div class="col-md-10 col-md-offset-1">
@@ -509,12 +372,14 @@
       <div class="row">
         <div class="col-md-12">
           <p class="probootstrap-copyright">&copy; 2023 Yuki Oyama : made by <a href="https://uicookies.com/">uiCookies:Explorer</a>.</p>
+          <!--
           <ul class="probootstrap-social">
             <li><a href="#"><i class="icon-github"></i></a></li>
             <li><a href="#"><i class="icon-linkedin"></i></a></li>
             <li><a href="https://twitter.com/actscape"><i class="icon-twitter"></i></a></li>
             <li><a href="#"><i class="icon-facebook2"></i></a></li>
           </ul>
+        -->
         </div>
       </div>
     </div>

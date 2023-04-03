@@ -98,20 +98,19 @@
               and it has been a central topic to transportation planning/engineering and studied in various fields of research.
               However, modeling route choices is challenging mainly due to the complex structure of networks.
               <br>
-              We have been contributing to the state of the art by developing new methodologies for route choice analysis.
-              In particular, we are interested in the link-based approach, which does not require path enumeration while modeling stochastic route choice behavior.
-              Our contributions so far include the developments of a model in extraordinary networks,
-              a method to learn behavior from raw GPS trajectories with measurement uncertainty,
-              and an algorithm to capture positive network attributes within a link-based framework.
+              I have been contributing to the state of the art by developing new methodologies for route choice analysis.
+              In particular, I am interested in the link-based (Markovian) approach, which does not require path enumeration while modeling stochastic route choice behavior.
+              Our achievements so far include the developments of model in extraordinary networks,
+              method to learn behavior from raw GPS trajectories with measurement uncertainty,
+              and algorithms to capture positive network attributes within a link-based framework.
               <br>
-              Our models and algorithms have been tested in various types of networks, such as vehicular and pedestrian networks,
-              in ordinary and extraordinary situations.
+              The proposed method is applicable not only to car networks but also to pedestrian networks, where agents' behavior is more uncertain and are affected by street attractiveness.
               <br>
             </p>
           </div>
           <div class="col-md-5">
             <p class="figure">
-            <a href="img/graphicalabstracts/GRL.png" data-lightbox="group" style="padding:0px; vertical-align:middle">
+            <a href="img/graphicalabstracts/GRL.png" data-lightbox="group" style="padding:5px; vertical-align:middle">
               <img src="img/graphicalabstracts/GRL.png" class="img-responsive"></a>
             <!-- Figure: gridlock network analysis -->
             </p>
@@ -145,18 +144,28 @@
           </div>
           <div class="col-md-7">
             <p class="rtopic">
-              This study establishes Markovian traffic equilibrium assignment based on the network generalized extreme value (NGEV) model, which we call NGEV equilibrium assignment. The use of the NGEV model for route choice modeling has recently been proposed, and it enables capturing the path correlation without explicit path enumeration. However, the theoretical properties of the model in traffic assignment have yet to be investigated in the literature, which has limited the practical applicability of the NGEV model in the traffic assignment field. This study addresses the research gap by providing the theoretical developments necessary for the NGEV equilibrium assignment. We first show that the NGEV assignment can be formulated and solved under the same path algebra as the traditional Markovian traffic assignment models. Moreover, we present the equivalent optimization formulations to the NGEV equilibrium assignment. The formulations allow us to derive both primal and dual types of efficient solution algorithms. In particular, the dual algorithm is based on the accelerated gradient method that is for the first time applied in the traffic assignment. The numerical experiments showed the excellent convergence and complementary relationship of the proposed primal and dual algorithms.
-              <br>
               <span class="roundbox">#TrafficAssignment</span>
               <span class="roundbox">#Equilibrium</span>
               <span class="roundbox">#RouteChoice</span>
               <span class="roundbox">#Network</span>
             </p>
+            <p class="rtopic">
+              Predicting traffic flows in a network is fundamental to transportation network planning and congestion management.
+              Network traffic assignment is a problem to analyze traffic flow patterns in networks, given the travel demand between different origin-destination (OD) pairs.
+              This problem is particularly difficult in congested networks, where agents interact with each other.
+              It is also important to consider the stochasticity (heterogeneity) and dynamics of traffic flows.
+              <br>
+              I have been working on the developments of (1) analytical and stochastic traffic assignment models, (2) network loading algorithms, and
+              (3) efficient and accurate solution algorithms to equilibrium (congested) assignment problems.
+              <br>
+              Our new models and algorithms are tested on various types of networks, such as vehicular, railway, and pedestrian networks (and their combinations),
+              but the application is not limited to transportation networks.
+            </p>
           </div>
           <div class="col-md-5">
             <p class="figure">
-            <a href="img/graphicalabstracts/netpic.png" data-lightbox="group" style="padding:5px; vertical-align:middle">
-              <img src="img/graphicalabstracts/netpic.png" class="img-responsive"></a>
+            <a href="img/graphicalabstracts/dta_net.png" data-lightbox="group" style="padding:5px; vertical-align:middle">
+              <img src="img/graphicalabstracts/dta_net.png" class="img-responsive"></a>
             <!-- Figure: gridlock network analysis -->
             </p>
           </div>
@@ -183,60 +192,17 @@
           </div>
 
           <div class="col-md-12">
-            <h3 class="name">Network Design for Human-Centric Cities</h3>
-          </div>
-          <div class="col-md-7">
-            <p class="rtopic">
-              This study establishes Markovian traffic equilibrium assignment based on the network generalized extreme value (NGEV) model, which we call NGEV equilibrium assignment. The use of the NGEV model for route choice modeling has recently been proposed, and it enables capturing the path correlation without explicit path enumeration. However, the theoretical properties of the model in traffic assignment have yet to be investigated in the literature, which has limited the practical applicability of the NGEV model in the traffic assignment field. This study addresses the research gap by providing the theoretical developments necessary for the NGEV equilibrium assignment. We first show that the NGEV assignment can be formulated and solved under the same path algebra as the traditional Markovian traffic assignment models. Moreover, we present the equivalent optimization formulations to the NGEV equilibrium assignment. The formulations allow us to derive both primal and dual types of efficient solution algorithms. In particular, the dual algorithm is based on the accelerated gradient method that is for the first time applied in the traffic assignment. The numerical experiments showed the excellent convergence and complementary relationship of the proposed primal and dual algorithms.
-              <br>
-              <span class="roundbox">#NetworkDesign</span>
-              <span class="roundbox">#TrafficAssignment</span>
-              <span class="roundbox">#Optimization</span>
-              <span class="roundbox">#Pedestrian</span>
-            </p>
-          </div>
-          <div class="col-md-5">
-            <p class="figure">
-            <a href="img/graphicalabstracts/designdiagram.png" data-lightbox="group" style="padding:5px; vertical-align:middle">
-              <img src="img/graphicalabstracts/designdiagram.png" class="img-responsive"></a>
-            <!-- Figure: gridlock network analysis -->
-            </p>
-          </div>
-          <div class="col-md-12">
-            <ol class="rtopic">
-              Selected publications on this topic:
-              <li class="jp">
-                村上颯一朗, 大山雄己 (2022)
-                <a href="https://doi.org/10.11361/journalcpij.57.622" target="_blank">マルチモーダル均衡配分モデルに基づく歩行者専用道路の最適配置計画 -川越市街地における歩行者街路網の創出を例として-.</a>
-                都市計画論文集 57(3): 622-629.
-                <br>
-              </li>
-              <li>
-                <span style="font-weight: 400">Oyama, Y.</span>, Scarinci, R., Bierlaire, M. (2018)
-                Optimal capacity location problem of parking and accelerated moving walkways to design a car-free city center.
-                The 7th symposium arranged by European Association for Research in Transportation (hEART), Athens, Greece.
-              </li>
-              <li class="jp">
-                大山雄己, 羽藤英二 (2017)
-                <a href="https://www.jstage.jst.go.jp/article/journalcpij/52/3/52_810/_article/-char/ja/" target="_blank">多目的最適化に基づく歩行者の活動ネットワークデザイン.</a>
-                都市計画論文集 52(3): 810-817.
-              </li>
-            </ol>
-          </div>
-
-
-
-          <div class="col-md-12">
             <h3 class="name">Pedestrian Activity Modeling</h3>
           </div>
           <div class="col-md-7">
             <p class="rtopic">
-              This study establishes Markovian traffic equilibrium assignment based on the network generalized extreme value (NGEV) model, which we call NGEV equilibrium assignment. The use of the NGEV model for route choice modeling has recently been proposed, and it enables capturing the path correlation without explicit path enumeration. However, the theoretical properties of the model in traffic assignment have yet to be investigated in the literature, which has limited the practical applicability of the NGEV model in the traffic assignment field. This study addresses the research gap by providing the theoretical developments necessary for the NGEV equilibrium assignment. We first show that the NGEV assignment can be formulated and solved under the same path algebra as the traditional Markovian traffic assignment models. Moreover, we present the equivalent optimization formulations to the NGEV equilibrium assignment. The formulations allow us to derive both primal and dual types of efficient solution algorithms. In particular, the dual algorithm is based on the accelerated gradient method that is for the first time applied in the traffic assignment. The numerical experiments showed the excellent convergence and complementary relationship of the proposed primal and dual algorithms.
-              <br>
               <span class="roundbox">#Pedestrian</span>
+              <span class="roundbox">#Activity</span>
               <span class="roundbox">#TimeUse</span>
-              <span class="roundbox">#RouteChoice</span>
               <span class="roundbox">#TimeSpaceNetwork</span>
+            </p>
+            <p class="rtopic">
+              (Under preparation)
             </p>
           </div>
           <div class="col-md-5">
@@ -254,15 +220,57 @@
                 Spatial city image and its formative factors: A street-based area cognition analysis.
                 <a href="https://ssrn.com/abstract=4374014" target="_blank">[SSRN]</a>
               </li>
+              <li>
+                <span style="font-weight: 400">Oyama, Y.</span>, Hato, E. (2016)
+                <a href="https://www.jstage.jst.go.jp/article/journalcpij/51/3/51_680/_article/-char/ja/" target="_blank">Pedestrian activity assignment problem with time-space constraint and path correlation.</a>
+                Journal of the City Planning Institute of Japan 51(3): 680-687 (in Japanese).
+              </li>
+              <li>
+                <span style="font-weight: 400">Oyama, Y.</span>, Fukuyama, S., Hato, E. (2014)
+                <a href="https://www.jstage.jst.go.jp/article/journalcpij/49/3/49_375/_article/-char/ja/" target="_blank">A study on mechanism of short trip generations using discretecontinuous model based on activity-needs.</a>
+                Journal of the City Planning Institute of Japan 49(3): 375-380 (in Japanese).
+              </li>
+            </ol>
+          </div>
+
+          <div class="col-md-12">
+            <h3 class="name">Network Design for Human-Centric Cities</h3>
+          </div>
+          <div class="col-md-7">
+            <p class="rtopic">
+              <span class="roundbox">#NetworkDesignProblem</span>
+              <span class="roundbox">#TrafficAssignment</span>
+              <span class="roundbox">#Optimization</span>
+              <span class="roundbox">#Pedestrian</span>
+            </p>
+            <p class="rtopic">
+              (Under preparation)
+            </p>
+          </div>
+          <div class="col-md-5">
+            <p class="figure">
+            <a href="img/graphicalabstracts/car_ped_net.png" data-lightbox="group" style="padding:5px; vertical-align:middle">
+              <img src="img/graphicalabstracts/car_ped_net.png" class="img-responsive"></a>
+            <!-- Figure: gridlock network analysis -->
+            </p>
+          </div>
+          <div class="col-md-12">
+            <ol class="rtopic">
+              Selected publications on this topic:
               <li class="jp">
-                大山雄己, 羽藤英二 (2016)
-                <a href="https://www.jstage.jst.go.jp/article/journalcpij/51/3/51_680/_article/-char/ja/" target="_blank">時空間制約と経路相関を考慮した歩行者の活動配分問題.</a>
-                都市計画論文集 51(3): 680-687.
+                Murakami, S., <span style="font-weight: 400">Oyama, Y.</span> (2022)
+                <a href="https://doi.org/10.11361/journalcpij.57.622" target="_blank">Optimal location of pedestrian streets based on a multimodal equilibrium assignment model.</a>
+                Journal of the City Planning Institute of Japan 57(3): 622-629. (in Japanese)
+              </li>
+              <li>
+                <span style="font-weight: 400">Oyama, Y.</span>, Scarinci, R., Bierlaire, M. (2018)
+                Optimal capacity location problem of parking and accelerated moving walkways to design a car-free city center.
+                The 7th symposium arranged by European Association for Research in Transportation (hEART), Athens, Greece.
               </li>
               <li class="jp">
-                大山雄己, 福山祥代, 羽藤英二 (2014)
-                <a href="https://www.jstage.jst.go.jp/article/journalcpij/49/3/49_375/_article/-char/ja/" target="_blank">活動欲求を考慮した離散-連続モデルによる小滞在発生メカニズムの分析.</a>
-                都市計画論文集 49(3): 375-380.
+                <span style="font-weight: 400">Oyama, Y.</span>, Hato, E. (2017)
+                <a href="https://www.jstage.jst.go.jp/article/journalcpij/52/3/52_810/_article/-char/ja/" target="_blank">Pedestrian activity-based network design based on multi-objective programming.</a>
+                Journal of the City Planning Institute of Japan 52(3): 810-817 (in Japanese).
               </li>
             </ol>
           </div>
@@ -273,18 +281,19 @@
           </div>
           <div class="col-md-7">
             <p class="rtopic">
-              This study establishes Markovian traffic equilibrium assignment based on the network generalized extreme value (NGEV) model, which we call NGEV equilibrium assignment. The use of the NGEV model for route choice modeling has recently been proposed, and it enables capturing the path correlation without explicit path enumeration. However, the theoretical properties of the model in traffic assignment have yet to be investigated in the literature, which has limited the practical applicability of the NGEV model in the traffic assignment field. This study addresses the research gap by providing the theoretical developments necessary for the NGEV equilibrium assignment. We first show that the NGEV assignment can be formulated and solved under the same path algebra as the traditional Markovian traffic assignment models. Moreover, we present the equivalent optimization formulations to the NGEV equilibrium assignment. The formulations allow us to derive both primal and dual types of efficient solution algorithms. In particular, the dual algorithm is based on the accelerated gradient method that is for the first time applied in the traffic assignment. The numerical experiments showed the excellent convergence and complementary relationship of the proposed primal and dual algorithms.
-              <br>
               <span class="roundbox">#Logistics</span>
+              <span class="roundbox">#DemandManagement</span>
               <span class="roundbox">#DiscreteChoice</span>
               <span class="roundbox">#Optimization</span>
-              <span class="roundbox">#DemandManagement</span>
+            </p>
+            <p class="rtopic">
+              (Under preparation)
             </p>
           </div>
           <div class="col-md-5">
             <p class="figure">
-            <a href="img/graphicalabstracts/GRL.png" data-lightbox="group" style="padding:5px; vertical-align:middle">
-              <img src="img/graphicalabstracts/GRL.png" class="img-responsive"></a>
+            <a href="img/graphicalabstracts/vodt.png" data-lightbox="group" style="padding:5px; vertical-align:middle">
+              <img src="img/graphicalabstracts/vodt.png" class="img-responsive"></a>
             <!-- Figure: gridlock network analysis -->
             </p>
           </div>

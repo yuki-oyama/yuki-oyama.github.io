@@ -218,7 +218,8 @@ span.jp {
 }
 
 span.award-name {
-  color: #000000;
+  font-weight: 400;
+  /* color: #000000; */
 }
 
 span.acceptance-rate {

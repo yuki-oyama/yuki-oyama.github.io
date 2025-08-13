@@ -108,12 +108,11 @@
               and it has been a central topic to transportation planning/engineering and studied in various fields of research.
               However, modeling route choices is challenging mainly due to the complex structure of networks.
               <br>
-              I have been contributing to the state of the art by developing new methodologies for route choice analysis.
-              In particular, I am interested in the link-based (Markovian) approach, which does not require path enumeration while modeling stochastic route choice behavior.
-              Our achievements so far include the developments of model in extraordinary networks,
-              method to learn behavior from raw GPS trajectories with measurement uncertainty,
-              and algorithms to capture positive network attributes within a link-based framework.
-              <br>
+              <!-- I have been contributing to the state of the art by developing new methodologies for route choice analysis. -->
+              In particular, I am interested in the link-based approach to route choice modeling, which describes agents' route choice behavior in a network by the choice of links (edges) rather than paths (sequences of links), in a Markovian fashion.
+              This approach allows us to model route choice behavior in a network without enumerating all possible paths, which is often infeasible in large networks, thereby providing a consistent estimator.
+              Our achievements include the developments of model in extraordinary networks [1], method to learn behavior from raw GPS trajectories with measurement uncertainty [2], 
+              algorithms to capture positive network attributes within a link-based framework [3], and simultaneous modeling global and local routing mechanisms [4].
               The proposed method is applicable not only to car networks but also to pedestrian networks, where agents' behavior is more uncertain and are affected by street attractiveness.
               <br>
             </p>
@@ -129,6 +128,16 @@
             <ol class="rtopic">
               Selected publications on this topic:
               <li>
+                <span style="font-weight: 400">Oyama, Y.</span>,  Hato, E. (2017)
+                <a href="http://www.sciencedirect.com/science/article/pii/S0968090X17302747" target="_blank">A discounted recursive logit model for dynamic gridlock network analysis.</a>
+                <em>Transportation Research Part C: Emerging Technologies</em> 85: 509-527.
+              </li>
+              <li>
+                <span style="font-weight: 400">Oyama, Y.</span>,  Hato, E. (2018)
+                <a href="https://doi.org/10.1016/j.trc.2018.05.013" target=”_blank”>Link-based measurement model to estimate route choice parameters in urban pedestrian networks.</a>
+                <i>Transportation Research Part C: Emerging Technologies</i> 93: 62-78.
+              </li>
+              <li>
                 <span style="font-weight: 400">Oyama, Y.</span> (2023)
                 <a href="https://doi.org/10.1016/j.trc.2023.104014" target="_blank">
                   Capturing positive network attributes during the estimation of recursive logit models: A prism-based approach.
@@ -137,14 +146,11 @@
                 <!--<a href="https://arxiv.org/abs/2204.01215" target=”_blank”>	[arXiv]</a>-->
               </li>
               <li>
-                <span style="font-weight: 400">Oyama, Y.</span>,  Hato, E. (2018)
-                <a href="https://doi.org/10.1016/j.trc.2018.05.013" target=”_blank”>Link-based measurement model to estimate route choice parameters in urban pedestrian networks.</a>
-                <i>Transportation Research Part C: Emerging Technologies</i> 93: 62-78.
-              </li>
-              <li>
-                <span style="font-weight: 400">Oyama, Y.</span>,  Hato, E. (2017)
-                <a href="http://www.sciencedirect.com/science/article/pii/S0968090X17302747" target="_blank">A discounted recursive logit model for dynamic gridlock network analysis.</a>
-                <em>Transportation Research Part C: Emerging Technologies</em> 85: 509-527.
+                <span style="font-weight: 400">Oyama, Y.</span> (2024)
+                <a href="https://doi.org/10.1016/j.tra.2024.103998" target="_blank">
+                  Global path preference and local response: A reward decomposition approach for network path choice analysis in the presence of visually perceived attributes.
+                </a>
+                <em>Transportation Research Part A: Policy and Practice</em> 181: 103998.
               </li>
             </ol>
           </div>
@@ -165,8 +171,10 @@
               This problem is particularly difficult in congested networks, where agents interact with each other.
               It is also important to consider the stochasticity (heterogeneity) and dynamics of traffic flows.
               <br>
-              I have been working on the developments of (1) analytical and stochastic traffic assignment models, (2) network loading algorithms, and
-              (3) efficient and accurate solution algorithms to equilibrium (congested) assignment problems.
+              I have been working on the developments of methodologies for network traffic assignment, 
+              including network loading algorithms for stable and efficient traffic assignment [1],
+              analytical and stochastic traffic equilibrium assignment models [2,3], 
+              and efficient solution algorithms based on dual formulations [2].
               <br>
               Our new models and algorithms are tested on various types of networks, such as vehicular, railway, and pedestrian networks (and their combinations),
               but the application is not limited to transportation networks.
@@ -183,9 +191,9 @@
             <ol class="rtopic">
               Selected publications on this topic:
               <li>
-                Akamatsu, T., Satsukawa, K., <span style="font-weight: 400">Oyama, Y.</span> (2023)
-                <a href="https://doi.org/10.48550/arXiv.2304.02194" target="_blank">Global stability of day-to-day dynamics for scheduled-based Markovian transit assignment with boadring queues.</a>
-                arXiv preprint.
+                <span style="font-weight: 400">Oyama, Y.</span>,  Hato, E. (2019)
+                <a href="https://doi.org/10.1016/j.trb.2019.02.002" target=”_blank”>Prism-based path set restriction for solving Markovian traffic assignment problem.</a>
+                <i>Transportation Research Part B: Methodological</i> 122: 528-546.
               </li>
               <li>
                 <span style="font-weight: 400">Oyama, Y.</span>, Hara, Y., Akamatsu, T. (2022)
@@ -195,9 +203,9 @@
                 <i>Transportation Research Part B: Methodological</i> 155: 135-159.
               </li>
               <li>
-                <span style="font-weight: 400">Oyama, Y.</span>,  Hato, E. (2019)
-                <a href="https://doi.org/10.1016/j.trb.2019.02.002" target=”_blank”>Prism-based path set restriction for solving Markovian traffic assignment problem.</a>
-                <i>Transportation Research Part B: Methodological</i> 122: 528-546.
+                Akamatsu, T., Satsukawa, K., <span style="font-weight: 400">Oyama, Y.</span> (2023)
+                <a href="https://doi.org/10.48550/arXiv.2304.02194" target="_blank">Global stability of day-to-day dynamics for scheduled-based Markovian transit assignment with boadring queues.</a>
+                arXiv preprint.
               </li>
             </ol>
           </div>
@@ -208,20 +216,24 @@
           <div class="col-md-7">
             <p class="rtopic">
               <span class="roundbox">#Pedestrian</span>
-              <span class="roundbox">#Activity</span>
-              <span class="roundbox">#TimeUse</span>
+              <span class="roundbox">#RouteChoice</span>
+              <span class="roundbox">#Perception</span>
               <span class="roundbox">#Walkability</span>
-              <span class="roundbox">#GPS</span>
+              <span class="roundbox">#StreetImage</span>
             </p>
             <p class="rtopic">
-              Walking is a sustainable transportation mode, and pedestrian activities are key to designs of lively cities. However, pedestrian behavior in networks differs in many ways from other modes of transportation, and thus traditional travel behavior models cannot necessarily be applied to pedestrians directly.
-              For example, when walking through a network, pedestrians may take a variety of paths in reaction to attractiveness of streets. Such attractiveness may be locally and visually perceived. They can also perform activities on streets more easily, necessitating modeling of sequences of moves and stays.
+              Walking is a sustainable transportation mode, and pedestrian activities are key to designs of lively cities. 
+              However, pedestrian behavior in networks differs in many ways from other modes of transportation, and thus traditional travel behavior models cannot necessarily be applied to pedestrians directly.
+              For example, when walking through a network, pedestrians may take a variety of paths in reaction to attractiveness of streets. 
+              Such attractiveness may be locally and visually perceived. They can also perform activities on streets more easily, necessitating modeling of sequences of moves and stays.
               <br>
-              Focusing on such characteristics of pedestrians, I have been working on the developments of new travel behavior modeling approaches.
+              Focusing on such characteristics of pedestrians, I have developed new travel behavior modeling approaches.
               The proposed route choice model allows the evaluation of the positive impacts of street attributes on pedestrian willingness to walk,
-              without restricting paths that pedestrians potentially take.
-              Moreover, we are working on the development of an integrated model of pedestrian activities in a time-space network.
-              In this framework, given time-constraint, pedestrians choose time-space paths that integrally include choices of multiple routes, locations and durations of activities, thereby representing a continuous sequence of moves and stays.
+              without restricting paths that pedestrians potentially take [1].
+              I also proposed a method for attribute-level analysis of pedestrian local responses to street attributes, which can be used to evaluate the walkability of streets [2].
+              Recently, by integrating computer vision techniques, I analyzed the effects of streetscape qualities on pedestrian perceptions/activities in urban areas [2,3,4].
+              Moreover, I have worked on the development of an integrated model of pedestrian activities in a time-space network.
+              In this framework, given time-constraint, pedestrians choose time-space paths that integrally include choices of multiple routes, locations and durations of activities, thereby representing a continuous sequence of moves and stays [5].
             </p>
           </div>
           <div class="col-md-5">
@@ -236,27 +248,33 @@
               Selected publications on this topic:
               <li>
                 <span style="font-weight: 400">Oyama, Y.</span> (2023)
+                <a href="https://doi.org/10.1016/j.trc.2023.104014" target="_blank">
+                  Capturing positive network attributes during the estimation of recursive logit models: A prism-based approach.
+                </a>
+                <em>Transportation Research Part C: Emerging Technologies</em> 147, 104014.
+              </li>
+              <li>
+                <span style="font-weight: 400">Oyama, Y.</span> (2024)
                 <a href="https://doi.org/10.1016/j.tra.2024.103998" target="_blank">
                   Global path preference and local response: A reward decomposition approach for network path choice analysis in the presence of visually perceived attributes.
                 </a>
                 <em>Transportation Research Part A: Policy and Practice</em> 181: 103998.
-                <!--<a href="https://arxiv.org/abs/2204.01215" target=”_blank”>	[arXiv]</a>-->
               </li>
               <li>
-                <span style="font-weight: 400">Oyama, Y.</span> (2023)
+                <span style="font-weight: 400">Oyama, Y.</span> (2024)
                 <a href="https://doi.org/10.1016/j.cities.2024.104898" target="_blank">Spatial city image and its formative factors: A street-based neighborhood cognition analysis.</a>
                 <em>Cities</em> 149: 104898.
+              </li>
+              <li>
+                Wang, J., <span style="font-weight: 400">Oyama, Y.</span> (2025)
+                <a href="https://ssrn.com/abstract=5155980" target="_blank">Comparative analysis of pedestrian global-local route choice across different urban contexts.</a>
+                Available at SSRN.
               </li>
               <li>
                 <span style="font-weight: 400">Oyama, Y.</span>, Hato, E. (2016)
                 <a href="https://www.jstage.jst.go.jp/article/journalcpij/51/3/51_680/_article/-char/ja/" target="_blank">Pedestrian activity assignment problem with time-space constraint and path correlation.</a>
                 <em>Journal of the City Planning Institute of Japan</em> 51(3): 680-687 (in Japanese).
               </li>
-              <!--<li>
-                <span style="font-weight: 400">Oyama, Y.</span>, Fukuyama, S., Hato, E. (2014)
-                <a href="https://www.jstage.jst.go.jp/article/journalcpij/49/3/49_375/_article/-char/ja/" target="_blank">A study on mechanism of short trip generations using discretecontinuous model based on activity-needs.</a>
-                Journal of the City Planning Institute of Japan 49(3): 375-380 (in Japanese).
-              </li>-->
             </ol>
           </div>
 
@@ -291,25 +309,30 @@
             <ol class="rtopic">
               Selected publications on this topic:
               <li class="jp">
-                <span style="font-weight: 400">Oyama, Y.</span>, Murakami, S., Chikaraishi, M., Parady, G. (2024)
-                <a href="https://ssrn.com/abstract=4646591" target="_blank">Designing pedestrian zones within city center networks considering policy objective trade-offs</a>. 
-                Transportation Research Part A (accepted).
-              </li>
-              <li class="jp">
-                Murakami, S., <span style="font-weight: 400">Oyama, Y.</span> (2022)
-                <a href="https://doi.org/10.11361/journalcpij.57.622" target="_blank">Optimal location of pedestrian streets based on a multimodal equilibrium assignment model.</a>
-                <em>Journal of the City Planning Institute of Japan</em> 57(3): 622-629. (in Japanese)
-              </li>
-              <!-- <li>
-                <span style="font-weight: 400">Oyama, Y.</span>, Scarinci, R., Bierlaire, M. (2018)
-                Optimal capacity location problem of parking and accelerated moving walkways to design a car-free city center.
-                The 7th symposium arranged by European Association for Research in Transportation (hEART), Athens, Greece.
-              </li> -->
-              <li class="jp">
                 <span style="font-weight: 400">Oyama, Y.</span>, Hato, E. (2017)
                 <a href="https://www.jstage.jst.go.jp/article/journalcpij/52/3/52_810/_article/-char/ja/" target="_blank">Pedestrian activity-based network design based on multi-objective programming.</a>
                 <em>Journal of the City Planning Institute of Japan</em> 52(3): 810-817 (in Japanese).
               </li>
+              <li class="jp">
+                <span style="font-weight: 400">Oyama, Y.</span>, Murakami, S., Chikaraishi, M., Parady, G. (2024)
+                <a href="https://ssrn.com/abstract=4646591" target="_blank">Designing pedestrian zones within city center networks considering policy objective trade-offs</a>. 
+                <em>Transportation Research Part A: Policy and Practice</em> 185: 104119.
+              </li>
+              <li>
+                Parady, G., Chikaraishi, M., <span style="font-weight: 400">Oyama, Y.</span> (2025) 
+                <a href="https://www.sciencedirect.com/science/article/pii/S0966692325001607", target="_blank">A walker’s paradise ain’t a driver’s hell: Evaluating the causal effect of temporary road pedestrianization on traffic conditions of surrounding roads.</a> 
+                <em>Journal of Transport Geography</em> 127: 104269.
+              </li>
+              <li>
+                Imamura, K., <span style="font-weight: 400">Oyama, Y.</span> (2025)
+                <a href="https://ssrn.com/abstract=5352112" target="_blank">Optimizing loading space locations for walkable city centers.</a>
+                Available at SSRN.
+              </li>
+              <!-- <li class="jp">
+                Murakami, S., <span style="font-weight: 400">Oyama, Y.</span> (2022)
+                <a href="https://doi.org/10.11361/journalcpij.57.622" target="_blank">Optimal location of pedestrian streets based on a multimodal equilibrium assignment model.</a>
+                <em>Journal of the City Planning Institute of Japan</em> 57(3): 622-629. (in Japanese)
+              </li> -->
             </ol>
           </div>
 
@@ -343,9 +366,11 @@
             <ol class="rtopic">
               Selected publications on this topic:
               <li>
-                <span style="font-weight: 400">Oyama, Y.</span>, Akamatsu, T. (2025)
-                <a href="https://www.sciencedirect.com/science/article/pii/S0968090X25001147", target="_blank">A market-based efficient matching mechanism for crowdsourced delivery systems with demand/supply elasticities</a>.
-                Transportation Research Part C: Emerging Technologies</a> 174: 105110.
+                <span style="font-weight: 400">Oyama, Y.</span>, Fukuda, D., Imura N., Nishinari, K. (2024)
+                <a href="https://doi.org/10.1016/j.jretconser.2024.103711" target="_blank">
+                  Do people really want fast and precisely scheduled delivery? E-commerce customers’ valuations of home delivery timing.
+                </a>
+                Journal of Retailing and Consumer Services 78: 103711.
               </li>
               <li>
                 Akamatsu, T., <span style="font-weight: 400">Oyama, Y.</span> (2024)
@@ -353,17 +378,15 @@
                 Transportation Research Part C: Emerging Technologies 166: 104738.
               </li>
               <li>
-                <span style="font-weight: 400">Oyama, Y.</span>, Fukuda, D., Imura N., Nishinari, K. (2024)
-                <a href="https://doi.org/10.1016/j.jretconser.2024.103711" target="_blank">
-                  Do people really want fast and precisely scheduled delivery? E-commerce customers’ valuations of home delivery timing.
-                </a>
-                Journal of Retailing and Consumer Services 78: 103711.
+                <span style="font-weight: 400">Oyama, Y.</span>, Akamatsu, T. (2025)
+                <a href="https://www.sciencedirect.com/science/article/pii/S0968090X25001147", target="_blank">A market-based efficient matching mechanism for crowdsourced delivery systems with demand/supply elasticities</a>.
+                Transportation Research Part C: Emerging Technologies</a> 174: 105110.
               </li>
-              <!-- <li>
-                Okazaki, R., <span style="font-weight: 400">Oyama, Y.</span>, Imura N., Nishinari, K. (2023)
-                Day-to-day delivery demand management: Evaluation based on routing efficiency and customer satisfaction.
-                Presented at hEART 2023, Zurich, Switzerland.
-              </li> -->
+              <li>
+                Okazaki, R., <span style="font-weight: 400">Oyama, Y.</span>, Imura N., Nishinari, K. (2025)
+                <a href="https://doi.org/10.1016/j.retrec.2025.101615", target="_blank">Evaluating choice-based demand management strategies for day-to-day home delivery planning.</a>
+                Research in Transportation Economics 113: 101615.
+              </li>
             </ol>
           </div>
 
